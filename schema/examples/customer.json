@@ -1,0 +1,6940 @@
+{
+    "_createTimestampDB": [
+        2018,
+        5,
+        15,
+        0,
+        57,
+        33,
+        248
+    ],
+    "_id": 86724,
+    "_updateTimestampDB": [
+        2018,
+        5,
+        15,
+        0,
+        57,
+        46,
+        148
+    ],
+    "_uuid": "bd3d23af-0139-4fbb-a29f-51132c5c983b",
+    "_version": 104,
+    "ancillaryDocumentXPs": [
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                480
+            ],
+            "_id": 97883,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                480
+            ],
+            "_uuid": "c9489233-c570-41ae-a82f-870ba7c684a7",
+            "_version": 0,
+            "documentValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2015,
+                8,
+                27,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 13,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                216
+            ],
+            "_id": 97886,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                216
+            ],
+            "_uuid": "3374178b-03ec-40b6-b492-c73160e5e383",
+            "_version": 0,
+            "documentValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2015,
+                3,
+                30,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 8,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                472
+            ],
+            "_id": 97879,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                472
+            ],
+            "_uuid": "94fd355e-e049-42c6-8fc1-9ce8a34a136e",
+            "_version": 0,
+            "documentValue": {
+                "amount": 300,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2014,
+                12,
+                20,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 4,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                277
+            ],
+            "_id": 97820,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                277
+            ],
+            "_uuid": "ca7c319c-1798-45bf-8325-b0e5bb128df7",
+            "_version": 0,
+            "documentValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2014,
+                11,
+                6,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 4,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db2-0000-000000109db2",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                595
+            ],
+            "_id": 97885,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                595
+            ],
+            "_uuid": "31a84a6c-9825-4853-b60a-6351f96d80e6",
+            "_version": 0,
+            "documentValue": {
+                "amount": 60,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2015,
+                9,
+                24,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 1,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db6-0000-000000109db6",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                280
+            ],
+            "_id": 97821,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                280
+            ],
+            "_uuid": "54837bd7-8495-41c0-8852-6fcf1b9fafab",
+            "_version": 0,
+            "documentValue": {
+                "amount": 150,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2014,
+                11,
+                6,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 4,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db2-0000-000000109db2",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                476
+            ],
+            "_id": 97881,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                476
+            ],
+            "_uuid": "05cc39be-9d5f-4840-822b-0f8bf1f83afd",
+            "_version": 0,
+            "documentValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2014,
+                12,
+                15,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 9,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                469
+            ],
+            "_id": 97878,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                469
+            ],
+            "_uuid": "627434ca-d770-4270-ac0b-66c91737a182",
+            "_version": 0,
+            "documentValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2014,
+                12,
+                20,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 4,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                230
+            ],
+            "_id": 97893,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                230
+            ],
+            "_uuid": "98869bee-b4a6-4723-b03d-a6d67beea901",
+            "_version": 0,
+            "documentValue": {
+                "amount": 90,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2015,
+                3,
+                25,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 13,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                478
+            ],
+            "_id": 97882,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                478
+            ],
+            "_uuid": "4dc0eb13-159d-4788-8b9b-9c1d5576c55c",
+            "_version": 0,
+            "documentValue": {
+                "amount": 150,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2015,
+                8,
+                27,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 13,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                218
+            ],
+            "_id": 97887,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                218
+            ],
+            "_uuid": "e6bb3996-b10e-4fb9-9c97-230b828af1c6",
+            "_version": 0,
+            "documentValue": {
+                "amount": 60,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2015,
+                3,
+                30,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 8,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                220
+            ],
+            "_id": 97888,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                220
+            ],
+            "_uuid": "6a7ac746-37d1-4e87-b177-4a554799f59a",
+            "_version": 0,
+            "documentValue": {
+                "amount": 40,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2015,
+                3,
+                30,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 8,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                319
+            ],
+            "_id": 97822,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                319
+            ],
+            "_uuid": "45c4e30b-e3af-4994-974c-597773fcf9dc",
+            "_version": 0,
+            "documentValue": {
+                "amount": 80,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2015,
+                8,
+                5,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 0,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db5-0000-000000109db5",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                323
+            ],
+            "_id": 97823,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                323
+            ],
+            "_uuid": "0cbb4fab-f601-48bf-9ffa-08637ec3e165",
+            "_version": 0,
+            "documentValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2015,
+                8,
+                5,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 0,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db5-0000-000000109db5",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                474
+            ],
+            "_id": 97880,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                27
+            ],
+            "_uuid": "3c45010b-4368-45a2-9c12-3fe0b2e6a923",
+            "_version": 1,
+            "documentValue": {
+                "amount": 600,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2014,
+                12,
+                15,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 9,
+            "refundTimestamp": [
+                2014,
+                12,
+                15,
+                9,
+                30,
+                0,
+                0
+            ],
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                589
+            ],
+            "_id": 97884,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                589
+            ],
+            "_uuid": "d8162d34-2bc3-4c44-a482-67f42cfc06fc",
+            "_version": 0,
+            "documentValue": {
+                "amount": 50,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2015,
+                9,
+                24,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 1,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db6-0000-000000109db6",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                224
+            ],
+            "_id": 97890,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                224
+            ],
+            "_uuid": "a0ecff51-e6ee-4292-bc90-d18558deaabe",
+            "_version": 0,
+            "documentValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2015,
+                4,
+                5,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 2,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                222
+            ],
+            "_id": 97889,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                222
+            ],
+            "_uuid": "b43f133a-a0d3-4810-8cd9-6991c736b5a1",
+            "_version": 0,
+            "documentValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2015,
+                3,
+                25,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 13,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                228
+            ],
+            "_id": 97892,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                228
+            ],
+            "_uuid": "c05529a6-d44b-42ba-8731-a3433fbdd874",
+            "_version": 0,
+            "documentValue": {
+                "amount": 80,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2015,
+                4,
+                5,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 2,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                226
+            ],
+            "_id": 97891,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                226
+            ],
+            "_uuid": "dc9cce32-48be-4296-aa24-a27a8051db16",
+            "_version": 0,
+            "documentValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2015,
+                3,
+                30,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 8,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "XBAG"
+        }
+    ],
+    "ancillaryXPs": [
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                824
+            ],
+            "_id": 291529,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                824
+            ],
+            "_uuid": "c79694e5-c649-4258-91e4-2febdea3f94e",
+            "_version": 0,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                11,
+                15,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                3,
+                2,
+                23,
+                0,
+                0,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db3-0000-000000109db3",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                433
+            ],
+            "_id": 291536,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                441
+            ],
+            "_uuid": "57e791f7-50f4-4b43-a198-2ebbd931c537",
+            "_version": 1,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                15,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 150,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2014,
+                12,
+                20,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                12,
+                24,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2014,
+                12,
+                20,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "SEAT",
+            "usageTimestamp": [
+                2014,
+                12,
+                24,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                168
+            ],
+            "_id": 291553,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                168
+            ],
+            "_uuid": "09655715-87fb-4776-b0cf-0ad8822b13c3",
+            "_version": 0,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                10,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                4,
+                7,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2015,
+                3,
+                24,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "XBAG",
+            "usageTimestamp": [
+                2015,
+                4,
+                7,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                180
+            ],
+            "_id": 291558,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                180
+            ],
+            "_uuid": "666f6f55-4147-4666-a9c4-f9f42b792ed7",
+            "_version": 0,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                10,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 30,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                3,
+                30,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                4,
+                7,
+                23,
+                0,
+                0,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                435
+            ],
+            "_id": 291537,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                437
+            ],
+            "_uuid": "10c76dc6-29d0-4097-936e-d930cd7c71ee",
+            "_version": 1,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                15,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2014,
+                12,
+                20,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                12,
+                24,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2014,
+                12,
+                20,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "XBAG",
+            "usageTimestamp": [
+                2014,
+                12,
+                24,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                314
+            ],
+            "_id": 291491,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                314
+            ],
+            "_uuid": "e86da021-f0ba-423d-a88d-6aeffed53f71",
+            "_version": 0,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                8,
+                4,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                8,
+                5,
+                23,
+                0,
+                0,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db5-0000-000000109db5",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                820
+            ],
+            "_id": 291527,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                820
+            ],
+            "_uuid": "390a2aeb-330a-442f-be14-b43d2cdd62a1",
+            "_version": 0,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                11,
+                15,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                3,
+                2,
+                23,
+                0,
+                0,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db3-0000-000000109db3",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                288
+            ],
+            "_id": 291488,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                299
+            ],
+            "_uuid": "5dc2cd7c-d4c0-47bc-a363-7b06176e9dd8",
+            "_version": 1,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                8,
+                4,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                8,
+                5,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                8,
+                5,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2015,
+                8,
+                4,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db5-0000-000000109db5",
+            "type": "XBAG",
+            "usageTimestamp": [
+                2015,
+                8,
+                5,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                818
+            ],
+            "_id": 291526,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                818
+            ],
+            "_uuid": "37531c84-a533-4044-a82d-ac83862856b4",
+            "_version": 0,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                1,
+                25,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                9,
+                2,
+                23,
+                0,
+                0,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db3-0000-000000109db3",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                826
+            ],
+            "_id": 291530,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                826
+            ],
+            "_uuid": "e270b95b-6e67-4bf0-b83f-68725c3cefdb",
+            "_version": 0,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                1,
+                25,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                9,
+                2,
+                23,
+                0,
+                0,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db3-0000-000000109db3",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                453
+            ],
+            "_id": 291545,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                453
+            ],
+            "_uuid": "7bcc4fb7-966e-40dd-9710-999213619c3c",
+            "_version": 0,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                8,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                9,
+                9,
+                23,
+                0,
+                0,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                461
+            ],
+            "_id": 291548,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                461
+            ],
+            "_uuid": "200bd800-1b2c-4e43-a998-7ecd8c2c7a8a",
+            "_version": 0,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                15,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                9,
+                9,
+                23,
+                0,
+                0,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                306
+            ],
+            "_id": 291490,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                306
+            ],
+            "_uuid": "df8dafe7-58c3-4f8d-b69d-40fae7ba0161",
+            "_version": 0,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                8,
+                4,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                8,
+                5,
+                23,
+                0,
+                0,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db5-0000-000000109db5",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                171
+            ],
+            "_id": 291554,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                174
+            ],
+            "_uuid": "5a1180e9-7c7d-480c-bacc-693d7f0164e3",
+            "_version": 1,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                10,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                3,
+                30,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                4,
+                7,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2015,
+                3,
+                24,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "SEAT",
+            "usageTimestamp": [
+                2015,
+                4,
+                7,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                425
+            ],
+            "_id": 291532,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                462
+            ],
+            "_uuid": "5299d527-8395-4160-9b32-8236dc7e9d2a",
+            "_version": 1,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                15,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                8,
+                27,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                9,
+                9,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2015,
+                2,
+                23,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                192
+            ],
+            "_id": 291563,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                192
+            ],
+            "_uuid": "dc99e42d-3d1f-411b-b857-f3789425fa1b",
+            "_version": 0,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                13,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                3,
+                25,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                9,
+                30,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2015,
+                3,
+                25,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                421
+            ],
+            "_id": 291531,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                454
+            ],
+            "_uuid": "3500f122-05b3-4f21-9e73-93449488a32d",
+            "_version": 1,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                15,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 75,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                8,
+                27,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                9,
+                9,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2015,
+                2,
+                23,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                270
+            ],
+            "_id": 291486,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                270
+            ],
+            "_uuid": "eb9b855f-2cfe-46e0-8187-8bf3d9ce4844",
+            "_version": 0,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                10,
+                6,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2014,
+                11,
+                6,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                11,
+                12,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2014,
+                10,
+                6,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db2-0000-000000109db2",
+            "type": "XBAG",
+            "usageTimestamp": [
+                2014,
+                11,
+                12,
+                22,
+                48,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                275
+            ],
+            "_id": 291487,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                275
+            ],
+            "_uuid": "efc87a34-9675-40d7-ae30-ce1e99a5f6f2",
+            "_version": 0,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                10,
+                6,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 90.733376,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2014,
+                11,
+                6,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                11,
+                12,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2014,
+                10,
+                6,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db2-0000-000000109db2",
+            "type": "SEAT",
+            "usageTimestamp": [
+                2014,
+                11,
+                12,
+                22,
+                48,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                582
+            ],
+            "_id": 291550,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                582
+            ],
+            "_uuid": "f2972f37-a5c1-4649-ae7c-0837556329a7",
+            "_version": 0,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                9,
+                24,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 60,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                9,
+                24,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                9,
+                25,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2015,
+                9,
+                23,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db6-0000-000000109db6",
+            "type": "XBAG",
+            "usageTimestamp": [
+                2015,
+                9,
+                25,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                814
+            ],
+            "_id": 291525,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                814
+            ],
+            "_uuid": "5db00250-d684-4b34-9e3c-0ed2ffd725c3",
+            "_version": 0,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                10,
+                2,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                9,
+                9,
+                23,
+                0,
+                0,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db3-0000-000000109db3",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                187
+            ],
+            "_id": 291561,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                187
+            ],
+            "_uuid": "cb68e6bd-c563-42fb-9210-8344f5ae7a9d",
+            "_version": 0,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                10,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                4,
+                8,
+                23,
+                0,
+                0,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                431
+            ],
+            "_id": 291535,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                431
+            ],
+            "_uuid": "ffc08723-ee5f-4464-bd7e-2f5e4179722c",
+            "_version": 0,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                8,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                9,
+                9,
+                23,
+                0,
+                0,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                446
+            ],
+            "_id": 291542,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                454
+            ],
+            "_uuid": "a0c3a16d-42e9-4fc3-826d-9f6ddc602eca",
+            "_version": 1,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                11,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2014,
+                12,
+                15,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                1,
+                5,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2014,
+                12,
+                13,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "XBAG",
+            "usageTimestamp": [
+                2015,
+                1,
+                5,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                173
+            ],
+            "_id": 291555,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                173
+            ],
+            "_uuid": "ed1bff0d-331e-44ce-87f3-123a89ed67d3",
+            "_version": 0,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                10,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                3,
+                30,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                4,
+                7,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2015,
+                3,
+                24,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                263
+            ],
+            "_id": 291485,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                277
+            ],
+            "_uuid": "1726530c-ba85-4747-91ac-3785c0c72bb2",
+            "_version": 1,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                10,
+                6,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 59.26663,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2014,
+                11,
+                6,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                11,
+                10,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2014,
+                10,
+                6,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db2-0000-000000109db2",
+            "type": "SEAT",
+            "usageTimestamp": [
+                2014,
+                11,
+                10,
+                22,
+                48,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                297
+            ],
+            "_id": 291489,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                297
+            ],
+            "_uuid": "2b094a45-28e8-4cda-9e3c-476284a3c834",
+            "_version": 0,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                8,
+                4,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 80,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                8,
+                5,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                8,
+                5,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2015,
+                8,
+                4,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db5-0000-000000109db5",
+            "type": "SEAT",
+            "usageTimestamp": [
+                2015,
+                8,
+                5,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                163
+            ],
+            "_id": 291551,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                199
+            ],
+            "_uuid": "652bdd9b-0c36-489a-ad56-d3f83f218caa",
+            "_version": 2,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                11,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 80,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                4,
+                5,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                4,
+                8,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2015,
+                3,
+                24,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "XBAG",
+            "usageTimestamp": [
+                2015,
+                4,
+                8,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                199
+            ],
+            "_id": 291565,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                207
+            ],
+            "_uuid": "4b516a35-47b9-45ce-8600-bdc95ba6d4c1",
+            "_version": 1,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                13,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 45,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                3,
+                25,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                9,
+                30,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2015,
+                3,
+                25,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                184
+            ],
+            "_id": 291560,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                200
+            ],
+            "_uuid": "eb2ad479-29cb-41ba-9f11-a0e48fe09c73",
+            "_version": 1,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                11,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                4,
+                5,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                4,
+                8,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2015,
+                3,
+                24,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "SEAT",
+            "usageTimestamp": [
+                2015,
+                4,
+                8,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                822
+            ],
+            "_id": 291528,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                822
+            ],
+            "_uuid": "4e14a1ed-1461-4429-9839-c264d0c34468",
+            "_version": 0,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                10,
+                2,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                9,
+                9,
+                23,
+                0,
+                0,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db3-0000-000000109db3",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                458
+            ],
+            "_id": 291547,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                458
+            ],
+            "_uuid": "2829a7fd-aa32-4703-989a-cdc296d52a23",
+            "_version": 0,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                15,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                9,
+                9,
+                23,
+                0,
+                0,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                189
+            ],
+            "_id": 291562,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                189
+            ],
+            "_uuid": "6e801dc8-c8a6-41b3-9865-782eb126cae2",
+            "_version": 0,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                10,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                4,
+                8,
+                23,
+                0,
+                0,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                258
+            ],
+            "_id": 291484,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                263
+            ],
+            "_uuid": "5469a6e4-dcd2-4205-9292-a42a9b35a984",
+            "_version": 1,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                10,
+                6,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2014,
+                11,
+                6,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                11,
+                10,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2014,
+                10,
+                6,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db2-0000-000000109db2",
+            "type": "XBAG",
+            "usageTimestamp": [
+                2014,
+                11,
+                10,
+                22,
+                48,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                182
+            ],
+            "_id": 291559,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                182
+            ],
+            "_uuid": "42f67f6f-2dbc-4279-bb70-b5efcca845b6",
+            "_version": 0,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                10,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 30,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                3,
+                30,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                4,
+                7,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2015,
+                3,
+                24,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                429
+            ],
+            "_id": 291534,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                462
+            ],
+            "_uuid": "09412561-df5b-47a3-9e6c-e61aaab5fdc4",
+            "_version": 2,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                15,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 75,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                8,
+                27,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                9,
+                9,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2015,
+                2,
+                23,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "SEAT",
+            "usageTimestamp": [
+                2015,
+                9,
+                9,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                176
+            ],
+            "_id": 291556,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                200
+            ],
+            "_uuid": "49f8fb7d-aa72-4cb0-8478-31fcc0b11c91",
+            "_version": 1,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                10,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                3,
+                30,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                4,
+                8,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2015,
+                3,
+                24,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "XBAG",
+            "usageTimestamp": [
+                2015,
+                4,
+                8,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                194
+            ],
+            "_id": 291564,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                207
+            ],
+            "_uuid": "bcd4174d-cdcf-4c87-92fc-55bf1f8bb8ff",
+            "_version": 1,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                13,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 45,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                3,
+                25,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                10,
+                5,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2015,
+                3,
+                25,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                571
+            ],
+            "_id": 291549,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                590
+            ],
+            "_uuid": "bac97a7e-c7d3-4d8a-ba03-82004ccae4cd",
+            "_version": 1,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                9,
+                24,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 50,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                9,
+                24,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                9,
+                25,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2015,
+                9,
+                23,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db6-0000-000000109db6",
+            "type": "SEAT",
+            "usageTimestamp": [
+                2015,
+                9,
+                25,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                441
+            ],
+            "_id": 291540,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                441
+            ],
+            "_uuid": "c82a1470-f693-4674-af8e-4d8a06f8f02a",
+            "_version": 0,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                15,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 150,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2014,
+                12,
+                20,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                12,
+                24,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2014,
+                12,
+                20,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                178
+            ],
+            "_id": 291557,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                192
+            ],
+            "_uuid": "d6b2b579-9ab5-466c-b9b2-72ee8f060f23",
+            "_version": 1,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                13,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                3,
+                25,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                10,
+                5,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2015,
+                3,
+                25,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                436
+            ],
+            "_id": 291538,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                436
+            ],
+            "_uuid": "d005d1fb-0ce3-4b61-b25e-f339ad97d1e0",
+            "_version": 0,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                15,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2014,
+                12,
+                20,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                12,
+                24,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2014,
+                12,
+                20,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                451
+            ],
+            "_id": 291544,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                454
+            ],
+            "_uuid": "f5cf4865-9761-4e36-80df-5505cbd30e1b",
+            "_version": 1,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                9,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2014,
+                12,
+                15,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                9,
+                2,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2014,
+                12,
+                13,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                456
+            ],
+            "_id": 291546,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                456
+            ],
+            "_uuid": "6ae4fe6d-aa50-4a48-9b32-0b3b6cc3022a",
+            "_version": 0,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                15,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                12,
+                24,
+                23,
+                0,
+                0,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "XBAG"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                205
+            ],
+            "_id": 291566,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                205
+            ],
+            "_uuid": "4cfa7b96-24bc-416a-8f08-6e41aa136614",
+            "_version": 0,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                10,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                4,
+                7,
+                23,
+                0,
+                0,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                448
+            ],
+            "_id": 291543,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                448
+            ],
+            "_uuid": "fe62b821-16ed-4974-8004-c16da68e4aca",
+            "_version": 0,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                9,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 300,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2014,
+                12,
+                15,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                9,
+                2,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2014,
+                12,
+                13,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                439
+            ],
+            "_id": 291539,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                449
+            ],
+            "_uuid": "08283e17-b8b6-4adf-bfcf-f74e6f295187",
+            "_version": 2,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                11,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 300,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2014,
+                12,
+                15,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                1,
+                5,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2014,
+                12,
+                13,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "SEAT",
+            "usageTimestamp": [
+                2015,
+                1,
+                5,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                444
+            ],
+            "_id": 291541,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                444
+            ],
+            "_uuid": "c1baba50-f8ba-4d7e-bec3-880d6c2291b8",
+            "_version": 0,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                15,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2014,
+                12,
+                24,
+                23,
+                0,
+                0,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "SEAT"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                166
+            ],
+            "_id": 291552,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                200
+            ],
+            "_uuid": "4ccfd325-3f6a-4f9a-8d96-ab79b178f477",
+            "_version": 2,
+            "code": "RQST",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                10,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 40,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                3,
+                30,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                4,
+                8,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2015,
+                3,
+                24,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "type": "SEAT",
+            "usageTimestamp": [
+                2015,
+                4,
+                8,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                427
+            ],
+            "_id": 291533,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                462
+            ],
+            "_uuid": "40c62822-847b-4609-8416-c00bc4a7f3d3",
+            "_version": 1,
+            "code": "XBAG",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                15,
+                10,
+                30,
+                0,
+                0
+            ],
+            "empty": false,
+            "estimatedValue": {
+                "amount": 0,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                8,
+                27,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "plannedUsageTimestamp": [
+                2015,
+                9,
+                9,
+                23,
+                0,
+                0,
+                0
+            ],
+            "transportIssuanceTimestamp": [
+                2015,
+                2,
+                23,
+                0,
+                0,
+                59,
+                0
+            ],
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "type": "XBAG",
+            "usageTimestamp": [
+                2015,
+                9,
+                9,
+                23,
+                0,
+                0,
+                0
+            ]
+        }
+    ],
+    "contacts": {},
+    "identity": {
+        "data": {
+            "birthDate": [
+                1924,
+                11,
+                11
+            ],
+            "nationalities": [
+                "GB"
+            ],
+            "titleCode": "MR"
+        },
+        "identifications": [
+            {
+                "data": {
+                    "birthDate": [
+                        1924,
+                        11,
+                        11
+                    ],
+                    "name": {
+                        "first": "PHILIP",
+                        "last": "STRIVE"
+                    },
+                    "nationality": "GB"
+                },
+                "expiryDate": [
+                    2018,
+                    9,
+                    3
+                ],
+                "reference": {
+                    "countryCode": "GB",
+                    "number": "11241",
+                    "typeCode": "P"
+                },
+                "usage": {
+                    "nb": 6,
+                    "lastDate": [
+                        2014,
+                        1,
+                        23
+                    ]
+                }
+            }
+        ],
+        "name": {
+            "first": "PHILIP",
+            "last": "STRIVE"
+        }
+    },
+    "transportXPs": [
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                409
+            ],
+            "_id": 1934717,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                416
+            ],
+            "_uuid": "0a4bd4f7-567f-4536-81ff-a2d6b027d679",
+            "_version": 1,
+            "arrival": {
+                "localDate": [
+                    2014,
+                    12,
+                    24
+                ],
+                "localTime": [
+                    23,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "CDG"
+                }
+            },
+            "boarded": true,
+            "commercialBookingClass": "D",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                15,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2014,
+                    12,
+                    24
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "NCE"
+                }
+            },
+            "distance": 695,
+            "empty": false,
+            "estimatedValue": {
+                "amount": 150,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2014,
+                12,
+                20,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "usageTimestamp": [
+                2014,
+                12,
+                24,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                390
+            ],
+            "_id": 1934713,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                390
+            ],
+            "_uuid": "a64f639d-b467-421a-ad9e-114594abe85b",
+            "_version": 0,
+            "arrival": {
+                "localDate": [
+                    2014,
+                    9,
+                    9
+                ],
+                "localTime": [
+                    23,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "CDG"
+                }
+            },
+            "commercialBookingClass": "A",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                8,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2014,
+                    9,
+                    9
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "LHR"
+                }
+            },
+            "distance": 348,
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                396
+            ],
+            "_id": 1934714,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                416
+            ],
+            "_uuid": "4cc02b02-931b-41ec-a9aa-892dc6a6d851",
+            "_version": 1,
+            "arrival": {
+                "localDate": [
+                    2015,
+                    9,
+                    9
+                ],
+                "localTime": [
+                    23,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "NCE"
+                }
+            },
+            "boarded": true,
+            "commercialBookingClass": "A",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                15,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2015,
+                    9,
+                    9
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "MAD"
+                }
+            },
+            "distance": 957,
+            "empty": false,
+            "estimatedValue": {
+                "amount": 75,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                2,
+                23,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "usageTimestamp": [
+                2015,
+                9,
+                9,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                810
+            ],
+            "_id": 1934711,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                810
+            ],
+            "_uuid": "f529614e-13ac-4dd3-8859-29f30a862173",
+            "_version": 0,
+            "arrival": {
+                "localDate": [
+                    2014,
+                    3,
+                    3
+                ],
+                "localTime": [
+                    8,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "NCE"
+                }
+            },
+            "commercialBookingClass": "B",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                11,
+                15,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2014,
+                    3,
+                    2
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "LHR"
+                }
+            },
+            "distance": 1043,
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db3-0000-000000109db3"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                158
+            ],
+            "_id": 1934729,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                158
+            ],
+            "_uuid": "0bc26207-54f0-4fe8-8843-248bed82e59d",
+            "_version": 0,
+            "arrival": {
+                "localDate": [
+                    2015,
+                    4,
+                    7
+                ],
+                "localTime": [
+                    23,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "CDG"
+                }
+            },
+            "commercialBookingClass": "A",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                10,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2015,
+                    4,
+                    7
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "NCE"
+                }
+            },
+            "distance": 695,
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                406
+            ],
+            "_id": 1934716,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                416
+            ],
+            "_uuid": "db0204e2-e8f3-464b-b9b4-ad9883aed74a",
+            "_version": 1,
+            "arrival": {
+                "localDate": [
+                    2014,
+                    12,
+                    24
+                ],
+                "localTime": [
+                    23,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "CDG"
+                }
+            },
+            "commercialBookingClass": "D",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                15,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2014,
+                    12,
+                    24
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "NCE"
+                }
+            },
+            "distance": 695,
+            "empty": false,
+            "estimatedValue": {
+                "amount": 150,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2014,
+                12,
+                20,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                413
+            ],
+            "_id": 1934719,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                413
+            ],
+            "_uuid": "12ea7bfd-fc46-4192-931f-bff09f30cb4f",
+            "_version": 0,
+            "arrival": {
+                "localDate": [
+                    2015,
+                    9,
+                    9
+                ],
+                "localTime": [
+                    23,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "NCE"
+                }
+            },
+            "commercialBookingClass": "A",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                15,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2015,
+                    9,
+                    9
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "MAD"
+                }
+            },
+            "distance": 957,
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                806
+            ],
+            "_id": 1934710,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                806
+            ],
+            "_uuid": "0880b7f4-1343-4f56-8976-785745ad22f4",
+            "_version": 0,
+            "arrival": {
+                "localDate": [
+                    2014,
+                    9,
+                    9
+                ],
+                "localTime": [
+                    23,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "CDG"
+                }
+            },
+            "commercialBookingClass": "B",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                10,
+                2,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2014,
+                    9,
+                    9
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "LHR"
+                }
+            },
+            "distance": 348,
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db3-0000-000000109db3"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                400
+            ],
+            "_id": 1934715,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                400
+            ],
+            "_uuid": "90a8f502-074f-4d1e-89ce-260b52cc3129",
+            "_version": 0,
+            "arrival": {
+                "localDate": [
+                    2015,
+                    9,
+                    9
+                ],
+                "localTime": [
+                    23,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "NCE"
+                }
+            },
+            "commercialBookingClass": "A",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                15,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2015,
+                    9,
+                    9
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "MAD"
+                }
+            },
+            "distance": 957,
+            "empty": false,
+            "estimatedValue": {
+                "amount": 75,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                2,
+                23,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                416
+            ],
+            "_id": 1934720,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                421
+            ],
+            "_uuid": "37210ab6-0643-4bd3-9e6e-84cdf2b14b0e",
+            "_version": 1,
+            "arrival": {
+                "localDate": [
+                    2015,
+                    1,
+                    5
+                ],
+                "localTime": [
+                    8,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "MAD"
+                }
+            },
+            "boarded": true,
+            "commercialBookingClass": "C",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                11,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2015,
+                    1,
+                    5
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "CDG"
+                }
+            },
+            "distance": 1064,
+            "empty": false,
+            "estimatedValue": {
+                "amount": 300,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2014,
+                12,
+                13,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "usageTimestamp": [
+                2015,
+                1,
+                5,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                162
+            ],
+            "_id": 1934730,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                162
+            ],
+            "_uuid": "35210136-c69d-4b44-93a8-ffc7ec129dae",
+            "_version": 0,
+            "arrival": {
+                "localDate": [
+                    2015,
+                    4,
+                    7
+                ],
+                "localTime": [
+                    23,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "CDG"
+                }
+            },
+            "commercialBookingClass": "A",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                10,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2015,
+                    4,
+                    7
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "NCE"
+                }
+            },
+            "distance": 695,
+            "empty": false,
+            "estimatedValue": {
+                "amount": 315,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                3,
+                24,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                257
+            ],
+            "_id": 1934688,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                257
+            ],
+            "_uuid": "e9010771-63da-4dd9-a5f2-8b3dbf6b1b89",
+            "_version": 0,
+            "arrival": {
+                "localDate": [
+                    2014,
+                    11,
+                    12
+                ],
+                "localTime": [
+                    8,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "MAD"
+                }
+            },
+            "boarded": true,
+            "commercialBookingClass": "A",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                10,
+                6,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2014,
+                    11,
+                    12
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "CDG"
+                }
+            },
+            "distance": 1064,
+            "empty": false,
+            "estimatedValue": {
+                "amount": 90.733376,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2014,
+                10,
+                6,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db2-0000-000000109db2",
+            "usageTimestamp": [
+                2014,
+                11,
+                12,
+                22,
+                48,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                149
+            ],
+            "_id": 1934725,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                158
+            ],
+            "_uuid": "032a4366-0699-4fd8-838d-a2b0b14b2c59",
+            "_version": 1,
+            "arrival": {
+                "localDate": [
+                    2015,
+                    4,
+                    8
+                ],
+                "localTime": [
+                    8,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "MAD"
+                }
+            },
+            "boarded": true,
+            "commercialBookingClass": "B",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                10,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2015,
+                    4,
+                    8
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "CDG"
+                }
+            },
+            "distance": 1064,
+            "empty": false,
+            "estimatedValue": {
+                "amount": 200,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                3,
+                24,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "usageTimestamp": [
+                2015,
+                4,
+                8,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                280
+            ],
+            "_id": 1934689,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                289
+            ],
+            "_uuid": "0fd9d7a1-f69b-4c7d-a142-d8d423a806c8",
+            "_version": 1,
+            "arrival": {
+                "localDate": [
+                    2015,
+                    8,
+                    5
+                ],
+                "localTime": [
+                    8,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "MAD"
+                }
+            },
+            "boarded": true,
+            "commercialBookingClass": "A",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                8,
+                4,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2015,
+                    8,
+                    5
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "FCO"
+                }
+            },
+            "distance": 1332,
+            "empty": false,
+            "estimatedValue": {
+                "amount": 120,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                8,
+                4,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db5-0000-000000109db5",
+            "usageTimestamp": [
+                2015,
+                8,
+                5,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                287
+            ],
+            "_id": 1934690,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                287
+            ],
+            "_uuid": "cc753ff2-7120-4322-9e97-2ea3c047a19d",
+            "_version": 0,
+            "arrival": {
+                "localDate": [
+                    2015,
+                    8,
+                    5
+                ],
+                "localTime": [
+                    23,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "MAD"
+                }
+            },
+            "commercialBookingClass": "A",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                8,
+                4,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2015,
+                    8,
+                    5
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "FCO"
+                }
+            },
+            "distance": 1332,
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db5-0000-000000109db5"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                253
+            ],
+            "_id": 1934687,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                258
+            ],
+            "_uuid": "05a919be-b4e0-46e3-b294-ce74c6413359",
+            "_version": 1,
+            "arrival": {
+                "localDate": [
+                    2014,
+                    11,
+                    10
+                ],
+                "localTime": [
+                    23,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "CDG"
+                }
+            },
+            "boarded": true,
+            "commercialBookingClass": "B",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                10,
+                6,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2014,
+                    11,
+                    10
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "NCE"
+                }
+            },
+            "distance": 695,
+            "empty": false,
+            "estimatedValue": {
+                "amount": 59.26663,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2014,
+                10,
+                6,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db2-0000-000000109db2",
+            "usageTimestamp": [
+                2014,
+                11,
+                10,
+                22,
+                48,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                813
+            ],
+            "_id": 1934712,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                813
+            ],
+            "_uuid": "bc70529e-f56c-4ac6-a9ce-9e6ca686decf",
+            "_version": 0,
+            "arrival": {
+                "localDate": [
+                    2014,
+                    9,
+                    2
+                ],
+                "localTime": [
+                    23,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "LHR"
+                }
+            },
+            "commercialBookingClass": "B",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                1,
+                25,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2014,
+                    9,
+                    2
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "ZZZ"
+                }
+            },
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db3-0000-000000109db3"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                569
+            ],
+            "_id": 1934722,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                569
+            ],
+            "_uuid": "452866b8-4762-42b2-8b1c-63f84f206634",
+            "_version": 0,
+            "arrival": {
+                "localDate": [
+                    2015,
+                    9,
+                    25
+                ],
+                "localTime": [
+                    8,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "CDG"
+                }
+            },
+            "boarded": true,
+            "commercialBookingClass": "A",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                9,
+                23,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2015,
+                    9,
+                    25
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "NCE"
+                }
+            },
+            "distance": 695,
+            "empty": false,
+            "estimatedValue": {
+                "amount": 300,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                9,
+                23,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db6-0000-000000109db6",
+            "usageTimestamp": [
+                2015,
+                9,
+                25,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                151
+            ],
+            "_id": 1934726,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                163
+            ],
+            "_uuid": "147b9af4-e112-430a-aae7-a99cd030412d",
+            "_version": 1,
+            "arrival": {
+                "localDate": [
+                    2015,
+                    4,
+                    8
+                ],
+                "localTime": [
+                    23,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "NCE"
+                }
+            },
+            "boarded": true,
+            "commercialBookingClass": "B",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                11,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2015,
+                    4,
+                    8
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "MAD"
+                }
+            },
+            "distance": 957,
+            "empty": false,
+            "estimatedValue": {
+                "amount": 80,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                3,
+                24,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "usageTimestamp": [
+                2015,
+                4,
+                8,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                419
+            ],
+            "_id": 1934721,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                419
+            ],
+            "_uuid": "bf5d8665-5edd-4118-bd01-2cf968188d69",
+            "_version": 0,
+            "arrival": {
+                "localDate": [
+                    2014,
+                    12,
+                    24
+                ],
+                "localTime": [
+                    23,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "CDG"
+                }
+            },
+            "commercialBookingClass": "D",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                15,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2014,
+                    12,
+                    24
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "NCE"
+                }
+            },
+            "distance": 695,
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                411
+            ],
+            "_id": 1934718,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                421
+            ],
+            "_uuid": "c85e1e23-3514-4eff-aa5a-acb7cf35abbb",
+            "_version": 1,
+            "arrival": {
+                "localDate": [
+                    2014,
+                    9,
+                    2
+                ],
+                "localTime": [
+                    23,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "MAD"
+                }
+            },
+            "commercialBookingClass": "C",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2014,
+                12,
+                9,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2014,
+                    9,
+                    2
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "CDG"
+                }
+            },
+            "distance": 1064,
+            "empty": false,
+            "estimatedValue": {
+                "amount": 300,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2014,
+                12,
+                13,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                144
+            ],
+            "_id": 1934723,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                154
+            ],
+            "_uuid": "105ade12-301b-4243-9f09-7b7d2ef32ea1",
+            "_version": 1,
+            "arrival": {
+                "localDate": [
+                    2014,
+                    9,
+                    30
+                ],
+                "localTime": [
+                    23,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "NCE"
+                }
+            },
+            "commercialBookingClass": "B",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                13,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2014,
+                    9,
+                    30
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "MAD"
+                }
+            },
+            "distance": 957,
+            "empty": false,
+            "estimatedValue": {
+                "amount": 70,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                3,
+                25,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                156
+            ],
+            "_id": 1934728,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                156
+            ],
+            "_uuid": "00feb7dc-f0c9-4eda-8e3e-80dcbda48101",
+            "_version": 0,
+            "arrival": {
+                "localDate": [
+                    2014,
+                    10,
+                    5
+                ],
+                "localTime": [
+                    23,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "NCE"
+                }
+            },
+            "commercialBookingClass": "B",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                13,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2014,
+                    10,
+                    5
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "MAD"
+                }
+            },
+            "distance": 957,
+            "empty": false,
+            "estimatedValue": {
+                "amount": 70,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                3,
+                25,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                147
+            ],
+            "_id": 1934724,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                163
+            ],
+            "_uuid": "92bfa35c-4b6f-48fd-b7d7-26c7d3f2c629",
+            "_version": 1,
+            "arrival": {
+                "localDate": [
+                    2015,
+                    4,
+                    7
+                ],
+                "localTime": [
+                    23,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "CDG"
+                }
+            },
+            "boarded": true,
+            "commercialBookingClass": "A",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                10,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2015,
+                    4,
+                    7
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "NCE"
+                }
+            },
+            "distance": 695,
+            "empty": false,
+            "estimatedValue": {
+                "amount": 315,
+                "currencyCode": "SEK"
+            },
+            "issuanceTimestamp": [
+                2015,
+                3,
+                24,
+                0,
+                0,
+                59,
+                0
+            ],
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7",
+            "usageTimestamp": [
+                2015,
+                4,
+                7,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                153
+            ],
+            "_id": 1934727,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                153
+            ],
+            "_uuid": "cec80bf8-e150-432e-b6d9-025cc88818bf",
+            "_version": 0,
+            "arrival": {
+                "localDate": [
+                    2015,
+                    4,
+                    8
+                ],
+                "localTime": [
+                    23,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "MAD"
+                }
+            },
+            "commercialBookingClass": "B",
+            "commercialCompany": "ZZ",
+            "creationTimestamp": [
+                2015,
+                3,
+                10,
+                10,
+                0,
+                0,
+                0
+            ],
+            "departure": {
+                "localDate": [
+                    2015,
+                    4,
+                    8
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "CDG"
+                }
+            },
+            "distance": 1064,
+            "empty": false,
+            "operationalCompany": "ZZ",
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7"
+        }
+    ],
+    "travelDocumentXPs": [
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                212
+            ],
+            "_id": 241231,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                212
+            ],
+            "_uuid": "955dd52a-4292-4f55-b011-01f5ceef10ab",
+            "_version": 0,
+            "documentValue": {
+                "amount": 630,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2015,
+                3,
+                24,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 14,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                466
+            ],
+            "_id": 241226,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                466
+            ],
+            "_uuid": "aebf9e40-4ccb-454e-937e-e0940cab085f",
+            "_version": 0,
+            "documentValue": {
+                "amount": 300,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2014,
+                12,
+                20,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 4,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                588
+            ],
+            "_id": 241228,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                588
+            ],
+            "_uuid": "ada0fbc2-85a7-4c34-a274-a5d18a0c638f",
+            "_version": 0,
+            "documentValue": {
+                "amount": 300,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2015,
+                9,
+                23,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 2,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db6-0000-000000109db6"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                207
+            ],
+            "_id": 241229,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                207
+            ],
+            "_uuid": "f5e85aa8-12c0-411c-86b6-715db1322c4d",
+            "_version": 0,
+            "documentValue": {
+                "amount": 200,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2015,
+                3,
+                24,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 14,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                210
+            ],
+            "_id": 241230,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                210
+            ],
+            "_uuid": "cdf9c01a-7247-4f06-a1c3-f2835149a581",
+            "_version": 0,
+            "documentValue": {
+                "amount": 140,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2015,
+                3,
+                25,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 13,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                468
+            ],
+            "_id": 241227,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                468
+            ],
+            "_uuid": "046b0ba3-baf9-48c6-9996-d5a9c8a6bc55",
+            "_version": 0,
+            "documentValue": {
+                "amount": 600,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2014,
+                12,
+                13,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 11,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                462
+            ],
+            "_id": 241225,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                27
+            ],
+            "_uuid": "d63d4dab-21b6-4e6c-8425-43588b6e5d02",
+            "_version": 1,
+            "documentValue": {
+                "amount": 150,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2015,
+                2,
+                23,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 198,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db4-0000-000000109db4",
+            "voidanceTimestamp": [
+                2014,
+                12,
+                15,
+                9,
+                30,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                215
+            ],
+            "_id": 241232,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                215
+            ],
+            "_uuid": "59e5f477-be74-4da4-a617-2a486db31103",
+            "_version": 0,
+            "documentValue": {
+                "amount": 80,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2015,
+                3,
+                24,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 14,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db7-0000-000000109db7"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                318
+            ],
+            "_id": 241256,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                318
+            ],
+            "_uuid": "c7b80615-068d-4570-ad0c-45a25bdd0a5d",
+            "_version": 0,
+            "documentValue": {
+                "amount": 120,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2015,
+                8,
+                4,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 1,
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db5-0000-000000109db5"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                276
+            ],
+            "_id": 241255,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                550
+            ],
+            "_uuid": "de0c6335-71a7-4050-944e-16be71ed4b7c",
+            "_version": 1,
+            "documentValue": {
+                "amount": 150,
+                "currencyCode": "SEK"
+            },
+            "empty": false,
+            "issuanceTimestamp": [
+                2014,
+                10,
+                6,
+                0,
+                0,
+                59,
+                0
+            ],
+            "issuanceToNextScheduledDeparture": 35,
+            "refundTimestamp": [
+                2014,
+                10,
+                10,
+                9,
+                30,
+                0,
+                0
+            ],
+            "revalidationCounter": 0,
+            "travelUuid": "00000000-0010-9db2-0000-000000109db2"
+        }
+    ],
+    "travelXPs": [
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                248
+            ],
+            "_id": 1382418,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                254
+            ],
+            "_uuid": "00000000-0010-9db2-0000-000000109db2",
+            "_version": 1,
+            "creationTimestamp": [
+                2014,
+                10,
+                5,
+                10,
+                0,
+                0,
+                0
+            ],
+            "creator": {
+                "iataId": "10000007",
+                "officeId": "NCE007987"
+            },
+            "empty": false,
+            "firstTransportIssuanceToFirstAncillaryIssuance": 31,
+            "issuanceTimestamp": [
+                2014,
+                10,
+                6,
+                0,
+                0,
+                59,
+                0
+            ],
+            "usageTimestamp": [
+                2014,
+                11,
+                10,
+                22,
+                48,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                801
+            ],
+            "_id": 1382378,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                33,
+                806
+            ],
+            "_uuid": "00000000-0010-9db3-0000-000000109db3",
+            "_version": 1,
+            "creationTimestamp": [
+                2014,
+                11,
+                9,
+                10,
+                0,
+                0,
+                0
+            ],
+            "creator": {
+                "iataId": "10000007",
+                "officeId": "NCE007987"
+            },
+            "empty": false
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                383
+            ],
+            "_id": 1382379,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                34,
+                390
+            ],
+            "_uuid": "00000000-0010-9db4-0000-000000109db4",
+            "_version": 1,
+            "creationTimestamp": [
+                2014,
+                9,
+                16,
+                10,
+                0,
+                0,
+                0
+            ],
+            "creator": {
+                "iataId": "10000007",
+                "officeId": "NCE007987"
+            },
+            "empty": false,
+            "firstTransportIssuanceToFirstAncillaryIssuance": 2,
+            "issuanceTimestamp": [
+                2014,
+                12,
+                13,
+                0,
+                0,
+                59,
+                0
+            ],
+            "usageTimestamp": [
+                2014,
+                12,
+                24,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                274
+            ],
+            "_id": 1382419,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                281
+            ],
+            "_uuid": "00000000-0010-9db5-0000-000000109db5",
+            "_version": 1,
+            "creationTimestamp": [
+                2015,
+                2,
+                18,
+                10,
+                0,
+                0,
+                0
+            ],
+            "creator": {
+                "iataId": "10000007",
+                "officeId": "NCE007987"
+            },
+            "empty": false,
+            "firstTransportIssuanceToFirstAncillaryIssuance": 1,
+            "issuanceTimestamp": [
+                2015,
+                8,
+                4,
+                0,
+                0,
+                59,
+                0
+            ],
+            "usageTimestamp": [
+                2015,
+                8,
+                5,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                560
+            ],
+            "_id": 1382380,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                35,
+                572
+            ],
+            "_uuid": "00000000-0010-9db6-0000-000000109db6",
+            "_version": 1,
+            "creationTimestamp": [
+                2015,
+                9,
+                23,
+                10,
+                0,
+                0,
+                0
+            ],
+            "creator": {
+                "iataId": "10000007",
+                "officeId": "NCE007987"
+            },
+            "empty": false,
+            "firstTransportIssuanceToFirstAncillaryIssuance": 1,
+            "issuanceTimestamp": [
+                2015,
+                9,
+                23,
+                0,
+                0,
+                59,
+                0
+            ],
+            "usageTimestamp": [
+                2015,
+                9,
+                25,
+                23,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                124
+            ],
+            "_id": 1382381,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                57,
+                36,
+                144
+            ],
+            "_uuid": "00000000-0010-9db7-0000-000000109db7",
+            "_version": 1,
+            "creationTimestamp": [
+                2015,
+                3,
+                10,
+                10,
+                0,
+                0,
+                0
+            ],
+            "creator": {
+                "iataId": "10000007",
+                "officeId": "NCE007987"
+            },
+            "empty": false,
+            "firstTransportIssuanceToFirstAncillaryIssuance": 1,
+            "issuanceTimestamp": [
+                2015,
+                3,
+                24,
+                0,
+                0,
+                59,
+                0
+            ],
+            "usageTimestamp": [
+                2015,
+                4,
+                7,
+                23,
+                0,
+                0,
+                0
+            ]
+        }
+    ]
+}

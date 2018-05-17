@@ -413,13 +413,6 @@ module.exports = function(grunt) {
 
                     },
 
-                    {
-
-                        src : './templates/basic.html',
-                        dest : './prod/<%= pkg.version %>/<%= now %>/<%= ver %>/basic.html',
-
-                    },
-
                 ],
 
             },
@@ -466,17 +459,6 @@ module.exports = function(grunt) {
                     {
 
                         expand : true,
-                        cwd : './bower_components/mdjson-schemas/',
-                        src : [
-                            '**/*.json',
-                            '!*bower.json',
-                        ],
-                        dest : './prod/<%= pkg.version %>/<%= now %>/<%= ver %>/schemas',
-
-                    },
-                    {
-
-                        expand : true,
                         cwd : './jsdoc/',
                         src : [
                             '**/*',
@@ -499,7 +481,23 @@ module.exports = function(grunt) {
                         src : [
                             '*.json',
                         ],
-                        dest : './prod/<%= pkg.version %>/<%= now %>/<%= ver %>/schemas/schema',
+                        dest : './prod/<%= pkg.version %>/<%= now %>/<%= ver %>/schemas',
+
+                    }
+                ]
+            },
+
+            examples: {
+                files : [
+
+                    {
+
+                        expand : true,
+                        cwd : './tmp/examples',
+                        src : [
+                            '*.json',
+                        ],
+                        dest : './prod/<%= pkg.version %>/<%= now %>/<%= ver %>/schemas/examples',
 
                     }
                 ]
@@ -609,7 +607,7 @@ module.exports = function(grunt) {
      * @member {task} prod
      * Build production.
      */
-    grunt.registerTask('prod', ['init', 'dev', 'env:prod', 'doc', 'clean:prod', 'sass:prod', 'uglify:prod', 'preprocess:prod', 'copy:prod', 'shell:prepareSchema', 'copy:schemas']);
+    grunt.registerTask('prod', ['init', 'dev', 'env:prod', 'doc', 'clean:prod', 'sass:prod', 'uglify:prod', 'preprocess:prod', 'copy:prod', 'shell:prepareSchema', 'copy:schemas', 'copy:examples']);
     /**
      * @member {task} doc
      * Build jsdocs.

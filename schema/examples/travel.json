@@ -1,0 +1,627 @@
+{
+    "_createTimestampDB": [
+        2018,
+        5,
+        15,
+        0,
+        9,
+        45,
+        462
+    ],
+    "_id": 1308832,
+    "_updateTimestampDB": [
+        2018,
+        5,
+        15,
+        0,
+        9,
+        45,
+        462
+    ],
+    "_uuid": "00000000-0013-f8a0-0000-00000013f8a0",
+    "_version": 0,
+    "empty": false,
+    "extraRequests": [],
+    "mealRequests": [],
+    "otherPurchases": [],
+    "reference": {
+        "passengerTattoo": 1,
+        "pnr": {
+            "creator": {
+                "office": {
+                    "iataId": "10000007",
+                    "officeId": "NCE007"
+                },
+                "type": "A"
+            },
+            "creatorStamp": {
+                "signIn": "M001",
+                "timestamp": [
+                    2014,
+                    1,
+                    15,
+                    10,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "owner": {
+                "office": {
+                    "iataId": "10000007",
+                    "officeId": "NCE007"
+                },
+                "type": "A"
+            },
+            "recordLocator": "PQO3Y856T8",
+            "updateTimestamp": [
+                2014,
+                1,
+                23,
+                10,
+                30,
+                0,
+                0
+            ],
+            "updater": {
+                "office": {
+                    "iataId": "10000007",
+                    "officeId": "NCE007"
+                },
+                "type": "A"
+            }
+        }
+    },
+    "removed": false,
+    "seatRequests": [],
+    "transports": [
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                9,
+                45,
+                463
+            ],
+            "_id": 2576004,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                9,
+                45,
+                463
+            ],
+            "_uuid": "bdad3d10-3843-4c17-8a56-4be64369e880",
+            "_version": 0,
+            "arrival": {
+                "localDate": [
+                    2014,
+                    3,
+                    3
+                ],
+                "localTime": [
+                    8,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "NCE"
+                },
+                "terminal": "2"
+            },
+            "checkInTime": [
+                21,
+                0,
+                0,
+                0
+            ],
+            "commercialDesignator": {
+                "companyCode": "ZZ",
+                "numberIATA": "007",
+                "suffix": "A"
+            },
+            "createTimestamp": [
+                2014,
+                1,
+                15,
+                10,
+                0,
+                0,
+                0
+            ],
+            "creator": {
+                "office": {
+                    "iataId": "10000007",
+                    "officeId": "NCE007"
+                },
+                "type": "A"
+            },
+            "deliveryData": {
+                "booked": true,
+                "checkin": {
+                    "status": "ACCEPTED"
+                }
+            },
+            "departure": {
+                "localDate": [
+                    2014,
+                    3,
+                    2
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "LHR"
+                },
+                "terminal": "4"
+            },
+            "informative": false,
+            "mode": {
+                "commercialBookingClass": "B",
+                "commercialPhysicalClass": "J",
+                "operationalBookingClass": "B",
+                "operationalPhysicalClass": "J",
+                "physicalType": "380"
+            },
+            "open": false,
+            "operationalDesignator": {
+                "companyCode": "ZZ",
+                "numberIATA": "007",
+                "suffix": "A"
+            },
+            "reference": 1,
+            "removed": false,
+            "statusCode": "HK"
+        },
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                9,
+                45,
+                463
+            ],
+            "_id": 2576005,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                9,
+                45,
+                463
+            ],
+            "_uuid": "98e79a20-9cc8-481e-98c0-73695a48acbc",
+            "_version": 0,
+            "arrival": {
+                "localDate": [
+                    2014,
+                    9,
+                    2
+                ],
+                "localTime": [
+                    23,
+                    30,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "LHR"
+                },
+                "terminal": "4"
+            },
+            "checkInTime": [
+                22,
+                0,
+                0,
+                0
+            ],
+            "commercialDesignator": {
+                "companyCode": "ZZ",
+                "numberIATA": "008",
+                "suffix": "A"
+            },
+            "createTimestamp": [
+                2014,
+                1,
+                15,
+                10,
+                0,
+                0,
+                0
+            ],
+            "creator": {
+                "office": {
+                    "iataId": "10000007",
+                    "officeId": "NCE007"
+                },
+                "type": "A"
+            },
+            "departure": {
+                "localDate": [
+                    2014,
+                    9,
+                    2
+                ],
+                "localTime": [
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "station": {
+                    "code": "NCE"
+                },
+                "terminal": "2"
+            },
+            "informative": false,
+            "mode": {
+                "commercialBookingClass": "B",
+                "commercialPhysicalClass": "J",
+                "operationalBookingClass": "B",
+                "operationalPhysicalClass": "J",
+                "physicalType": "380"
+            },
+            "open": false,
+            "operationalDesignator": {
+                "companyCode": "ZZ",
+                "numberIATA": "008",
+                "suffix": "A"
+            },
+            "reference": 2,
+            "removed": false,
+            "statusCode": "HK"
+        }
+    ],
+    "traveler": {
+        "contacts": {
+            "cleanPhones": [
+                {
+                    "countryCode": "GB",
+                    "countryPrefix": "44",
+                    "number": "7000000007",
+                    "phoneNumber": {
+                        "areaCode": "44",
+                        "localNumber": "7000000007"
+                    },
+                    "tags": [
+                        "PRO"
+                    ]
+                }
+            ]
+        },
+        "identity": {
+            "name": {
+                "clean": {
+                    "first": "JAMES",
+                    "last": "BOND"
+                }
+            },
+            "titleCode": "MR"
+        },
+        "preferences": {},
+        "type": "ADT"
+    },
+    "tripPurchases": [
+        {
+            "_createTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                9,
+                45,
+                463
+            ],
+            "_id": 1150475,
+            "_updateTimestampDB": [
+                2018,
+                5,
+                15,
+                0,
+                9,
+                45,
+                463
+            ],
+            "_uuid": "0597a858-7795-4d19-b4de-856ff2bebae9",
+            "_version": 0,
+            "external": false,
+            "items": [
+                {
+                    "_createTimestampDB": [
+                        2018,
+                        5,
+                        15,
+                        0,
+                        9,
+                        45,
+                        463
+                    ],
+                    "_id": 1630893,
+                    "_updateTimestampDB": [
+                        2018,
+                        5,
+                        15,
+                        0,
+                        9,
+                        45,
+                        463
+                    ],
+                    "_uuid": "00000000-0018-e2ad-0000-00000018e2ad",
+                    "_version": 0,
+                    "baggageAllowance": {
+                        "number": 2,
+                        "unitCode": "K"
+                    },
+                    "coupon": {
+                        "fareBasis": {
+                            "code": "RT",
+                            "primaryCode": "J",
+                            "ticketDesignator": "WEB"
+                        },
+                        "number": 1,
+                        "statusCode": "OK",
+                        "termOfUse": {
+                            "validityEnd": [
+                                2014,
+                                3,
+                                3,
+                                2,
+                                35,
+                                0,
+                                0
+                            ],
+                            "validityStart": [
+                                2014,
+                                3,
+                                1,
+                                8,
+                                30,
+                                0,
+                                0
+                            ]
+                        },
+                        "type": "TRIP"
+                    },
+                    "creatorStamp": {
+                        "timestamp": [
+                            2014,
+                            1,
+                            23,
+                            10,
+                            30,
+                            0,
+                            0
+                        ]
+                    },
+                    "reference": 1,
+                    "removed": false,
+                    "revisions": [
+                        0
+                    ],
+                    "transportId": 2576004,
+                    "type": "TRIP"
+                },
+                {
+                    "_createTimestampDB": [
+                        2018,
+                        5,
+                        15,
+                        0,
+                        9,
+                        45,
+                        463
+                    ],
+                    "_id": 1630894,
+                    "_updateTimestampDB": [
+                        2018,
+                        5,
+                        15,
+                        0,
+                        9,
+                        45,
+                        463
+                    ],
+                    "_uuid": "00000000-0018-e2ae-0000-00000018e2ae",
+                    "_version": 0,
+                    "baggageAllowance": {
+                        "number": 2,
+                        "unitCode": "K"
+                    },
+                    "coupon": {
+                        "fareBasis": {
+                            "code": "KK",
+                            "primaryCode": "LL",
+                            "ticketDesignator": "WEB"
+                        },
+                        "number": 2,
+                        "statusCode": "OK",
+                        "termOfUse": {
+                            "validityEnd": [
+                                2014,
+                                9,
+                                3,
+                                2,
+                                35,
+                                0,
+                                0
+                            ],
+                            "validityStart": [
+                                2014,
+                                9,
+                                1,
+                                8,
+                                30,
+                                0,
+                                0
+                            ]
+                        },
+                        "type": "TRIP"
+                    },
+                    "creatorStamp": {
+                        "timestamp": [
+                            2014,
+                            1,
+                            23,
+                            10,
+                            30,
+                            0,
+                            0
+                        ]
+                    },
+                    "reference": 2,
+                    "removed": false,
+                    "revisions": [
+                        0
+                    ],
+                    "transportId": 2576005,
+                    "type": "TRIP"
+                }
+            ],
+            "pricing": {
+                "automatic": true,
+                "createTimestamp": [
+                    2014,
+                    1,
+                    14,
+                    0,
+                    0,
+                    59,
+                    0
+                ],
+                "exchangeRate1": {
+                    "amount": 1.2,
+                    "currencyCode": "EUR"
+                },
+                "exchangeRate2": {
+                    "amount": 0.83333,
+                    "currencyCode": "GBP"
+                },
+                "fare": {
+                    "baseCalculated": {
+                        "amount": 1000,
+                        "currencyCode": "GBP"
+                    },
+                    "baseCalculation": "ZZ/* 1200.00EUR/ZZ",
+                    "basePayed": {
+                        "amount": 1200,
+                        "currencyCode": "EUR"
+                    },
+                    "grandTotal": {
+                        "amount": 1358.25,
+                        "currencyCode": "EUR"
+                    },
+                    "net": {
+                        "amount": 1200,
+                        "currencyCode": "EUR"
+                    },
+                    "taxes": [
+                        {
+                            "countryCode": "FR",
+                            "old": false,
+                            "type": "AC",
+                            "value": {
+                                "amount": 82,
+                                "currencyCode": "EUR"
+                            }
+                        },
+                        {
+                            "countryCode": "FR",
+                            "old": false,
+                            "type": "AT",
+                            "value": {
+                                "amount": 53.25,
+                                "currencyCode": "EUR"
+                            }
+                        },
+                        {
+                            "countryCode": "FR",
+                            "old": false,
+                            "type": "TI",
+                            "value": {
+                                "amount": 23,
+                                "currencyCode": "EUR"
+                            }
+                        }
+                    ],
+                    "total": {
+                        "amount": 1358.25,
+                        "currencyCode": "EUR"
+                    }
+                },
+                "issuingOfficeId": "001NCE00A",
+                "issuingSignIn": "1234",
+                "issuingStatusCode": "F",
+                "reference": 1,
+                "removed": false,
+                "validityEnd": [
+                    2014,
+                    1,
+                    26,
+                    0,
+                    0,
+                    59,
+                    0
+                ]
+            },
+            "receipt": {
+                "createTimestamp": [
+                    2014,
+                    3,
+                    2,
+                    0,
+                    0,
+                    59,
+                    0
+                ],
+                "issuingCompanyCode": "ZZ",
+                "issuingOffice": {
+                    "iataId": "10000007",
+                    "officeId": "NCE007XXX"
+                },
+                "issuingReference": {
+                    "companyCode": "007",
+                    "conjunctiveReferenceNb": 1,
+                    "number": "1234567890"
+                },
+                "issuingStatusCode": "T",
+                "issuingTotalFare": {
+                    "confidential": false,
+                    "value": {
+                        "amount": 1358.25,
+                        "baseCurrency": {
+                            "amount": 13261.96,
+                            "currencyCode": "SEK"
+                        },
+                        "currencyCode": "EUR",
+                        "originalCurrency": {
+                            "amount": 1358.25,
+                            "currencyCode": "EUR"
+                        }
+                    }
+                },
+                "issuingTypeCode": "E",
+                "reference": 22,
+                "removed": false
+            },
+            "restriction": {
+                "forInfant": false,
+                "payment": "PAX/* FULLY REFUNDABLE"
+            },
+            "synchronization": "FULL",
+            "type": "TRIP"
+        }
+    ],
+    "xbagRequests": []
+}
