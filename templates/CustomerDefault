@@ -1,0 +1,8 @@
+  "id": "#CustomerDefault.reference.clean.json",
+  "type": "object",
+  "properties": {
+    "customer": {
+  		"description": "The Conztanz Customer Business Object reflects latest image of a Customer. It is the synthesis of several data feed integrated within ConztanzONE platform and store within the ONEdatabank module.<br><br>Here is a simplified version of the data model (click <a href=\"javascript:popupOnClick('Customer Data Model','images/doc/customer_datamodel.svg');\">here</a> to enlarge):<div layout=row layout-align=center ><object style='width:100%;' id='datamodel' data='images/doc/customer_datamodel.svg' type='image/svg+xml'/></div>",
+      "$ref": "#/definitions/CustomerDefault:customer:model:Customer"
+    }
+  },

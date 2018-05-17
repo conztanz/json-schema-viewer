@@ -1,0 +1,981 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "CustomerDefault:customer:model:Customer":{
+      "type" : "object",
+      "id" : "CustomerDefault:customer:model:Customer",
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "description" : "Conztanz internal ID"
+        },
+        "_uuid" : {
+          "type" : "string",
+          "description" : "Conztanz internal UUID"
+        },
+        "ancillaryDocumentXPs" : {
+          "type" : "array",
+          "description" : "List of all the documents (ticket), and their selected data, issued for the customer and related to the purchase of ancillaries",
+          "items" : {
+            "$ref" : "#/definitions/CustomerDefault:customer:model:xp:AncillaryDocumentXP"
+          }
+        },
+        "ancillaryXPs" : {
+          "type" : "array",
+          "description" : "List of all the chargeable ancillaries, and their selected data, booked or requested by the customer",
+          "items" : {
+            "$ref" : "#/definitions/CustomerDefault:customer:model:xp:AncillaryXP"
+          }
+        },
+        "behaviours" : {
+          "type" : "array",
+          "description" : "Customer's behaviour tags. Behaviour tags are defined by business rules e.g.: HIGH_SPENDER, FREQUENT_BUYER",
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "contacts" : {
+          "$ref" : "#/definitions/CustomerDefault:customer:model:contact:Contacts",
+          "description" : "Customer's contacts"
+        },
+        "identity" : {
+          "$ref" : "#/definitions/CustomerDefault:customer:model:data:Identity",
+          "description" : "Customer's identity"
+        },
+        "loyaltyPrograms" : {
+          "type" : "array",
+          "description" : "List of all the known qualified loyalty programs subscribed by the customer (frequent traveler number, etc...)",
+          "items" : {
+            "$ref" : "#/definitions/CustomerDefault:customer:model:data:LoyaltyProgramQualifier"
+          }
+        },
+        "transportXPs" : {
+          "type" : "array",
+          "description" : "List of all the transports, and their selected data, booked or requested by the customer",
+          "items" : {
+            "$ref" : "#/definitions/CustomerDefault:customer:model:xp:TransportXP"
+          }
+        },
+        "travelDocumentXPs" : {
+          "type" : "array",
+          "description" : "List of all the documents (ticket), and their selected data, issued for the customer and related to the purchase of transports (segments)",
+          "items" : {
+            "$ref" : "#/definitions/CustomerDefault:customer:model:xp:TravelDocumentXP"
+          }
+        },
+        "travelXPs" : {
+          "type" : "array",
+          "description" : "List of all the travels (PNRs), and their selected data, booked by the customer",
+          "items" : {
+            "$ref" : "#/definitions/CustomerDefault:customer:model:xp:TravelXP"
+          }
+        }
+      }
+    },
+    "CustomerDefault:customer:model:contact:ContactQualifier:ContactUsage":{
+      "type" : "object",
+      "id" : "CustomerDefault:customer:model:contact:ContactQualifier:ContactUsage",
+      "properties" : {
+        "lastDate" : {
+          "type" : "array",
+          "description" : "Last usage date (format=[yyyy][MM][dd])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 3,
+          "minItems" : 3
+        },
+        "nb" : {
+          "type" : "integer",
+          "description" : "Usage number"
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "Usage type",
+          "enum" : [ "AGENCY", "APIS", "ASSIGNED", "BILLING", "COMMUNICATION", "DELIVERY", "DESTINATION", "DISRUPTION", "EMERGENCY", "FAX", "FIXED", "MAILING", "MOBILE", "OTHER", "PERSO", "PHYSICAL", "PRO", "VERIFICATION" ]
+        }
+      }
+    },
+    "CustomerDefault:customer:model:contact:Contacts":{
+      "type" : "object",
+      "id" : "CustomerDefault:customer:model:contact:Contacts",
+      "properties" : {
+        "address" : {
+          "type" : "array",
+          "description" : "Customer's addresses",
+          "items" : {
+            "$ref" : "#/definitions/CustomerDefault:model:person:contact:Address"
+          }
+        },
+        "emails" : {
+          "type" : "array",
+          "description" : "Customer's qualified emails",
+          "items" : {
+            "$ref" : "#/definitions/CustomerDefault:customer:model:contact:EmailQualifier"
+          }
+        },
+        "phones" : {
+          "type" : "array",
+          "description" : "Customer's qualified phones",
+          "items" : {
+            "$ref" : "#/definitions/CustomerDefault:customer:model:contact:PhoneQualifier"
+          }
+        }
+      }
+    },
+    "CustomerDefault:customer:model:contact:EmailQualifier":{
+      "type" : "object",
+      "id" : "CustomerDefault:customer:model:contact:EmailQualifier",
+      "properties" : {
+        "reference" : {
+          "$ref" : "#/definitions/CustomerDefault:model:person:contact:EmailAddress",
+          "description" : "Qualified data reference"
+        },
+        "usage" : {
+          "$ref" : "#/definitions/CustomerDefault:customer:model:data:DataQualifier:DataUsage",
+          "description" : "Qualified data usage"
+        },
+        "usages" : {
+          "type" : "array",
+          "description" : "Contact's different usages",
+          "items" : {
+            "$ref" : "#/definitions/CustomerDefault:customer:model:contact:ContactQualifier:ContactUsage"
+          }
+        }
+      }
+    },
+    "CustomerDefault:customer:model:contact:PhoneNumber":{
+      "type" : "object",
+      "id" : "CustomerDefault:customer:model:contact:PhoneNumber",
+      "properties" : {
+        "areaCode" : {
+          "type" : "string",
+          "description" : "Phone number area code (eg. 33)"
+        },
+        "countryPrefix" : {
+          "type" : "string",
+          "description" : "Here for backward compatibility during countryPrefix -> phoneNumber.areaCode migration"
+        },
+        "localNumber" : {
+          "type" : "string",
+          "description" : "Phone number local number"
+        },
+        "number" : {
+          "type" : "string",
+          "description" : "TODO Here for backward compatibility during number -> phoneNumber.localNumber migration"
+        }
+      }
+    },
+    "CustomerDefault:customer:model:contact:PhoneQualifier":{
+      "type" : "object",
+      "id" : "CustomerDefault:customer:model:contact:PhoneQualifier",
+      "properties" : {
+        "countryCode" : {
+          "type" : "string",
+          "description" : "Phone country code (eg: FR)"
+        },
+        "reference" : {
+          "$ref" : "#/definitions/CustomerDefault:customer:model:contact:PhoneNumber",
+          "description" : "Qualified data reference"
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "Phone type"
+        },
+        "usage" : {
+          "$ref" : "#/definitions/CustomerDefault:customer:model:data:DataQualifier:DataUsage",
+          "description" : "Qualified data usage"
+        },
+        "usages" : {
+          "type" : "array",
+          "description" : "Contact's different usages",
+          "items" : {
+            "$ref" : "#/definitions/CustomerDefault:customer:model:contact:ContactQualifier:ContactUsage"
+          }
+        }
+      }
+    },
+    "CustomerDefault:customer:model:data:DataQualifier:DataUsage":{
+      "type" : "object",
+      "id" : "CustomerDefault:customer:model:data:DataQualifier:DataUsage",
+      "properties" : {
+        "lastDate" : {
+          "type" : "array",
+          "description" : "Last usage date (format=[yyyy][MM][dd])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 3,
+          "minItems" : 3
+        },
+        "nb" : {
+          "type" : "integer",
+          "description" : "Usage number"
+        }
+      }
+    },
+    "CustomerDefault:customer:model:data:IdentificationQualifier":{
+      "type" : "object",
+      "id" : "CustomerDefault:customer:model:data:IdentificationQualifier",
+      "properties" : {
+        "data" : {
+          "$ref" : "#/definitions/CustomerDefault:model:person:identification:IdentificationData",
+          "description" : "Identification document associated data"
+        },
+        "expiryDate" : {
+          "type" : "array",
+          "description" : "Identification document expiry date (format=[yyyy][MM][dd])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 3,
+          "minItems" : 3
+        },
+        "reference" : {
+          "$ref" : "#/definitions/CustomerDefault:model:person:identification:DocumentID",
+          "description" : "Qualified data reference"
+        },
+        "usage" : {
+          "$ref" : "#/definitions/CustomerDefault:customer:model:data:DataQualifier:DataUsage",
+          "description" : "Qualified data usage"
+        }
+      }
+    },
+    "CustomerDefault:customer:model:data:Identity":{
+      "type" : "object",
+      "id" : "CustomerDefault:customer:model:data:Identity",
+      "properties" : {
+        "data" : {
+          "$ref" : "#/definitions/CustomerDefault:model:person:PersonalData",
+          "description" : "Customer's personal data such as birth date or nationalities for instance"
+        },
+        "identifications" : {
+          "type" : "array",
+          "description" : "List of all the customer's qualified identification documents such as passport for instance",
+          "items" : {
+            "$ref" : "#/definitions/CustomerDefault:customer:model:data:IdentificationQualifier"
+          }
+        },
+        "name" : {
+          "$ref" : "#/definitions/CustomerDefault:model:person:Name",
+          "description" : "Customer's full name"
+        }
+      }
+    },
+    "CustomerDefault:customer:model:data:LoyaltyProgramQualifier":{
+      "type" : "object",
+      "id" : "CustomerDefault:customer:model:data:LoyaltyProgramQualifier",
+      "properties" : {
+        "data" : {
+          "$ref" : "#/definitions/CustomerDefault:model:person:LoyaltyProgramData",
+          "description" : "Loyatly program associated data"
+        },
+        "reference" : {
+          "$ref" : "#/definitions/CustomerDefault:model:person:LoyaltyProgramID",
+          "description" : "Qualified data reference"
+        },
+        "usage" : {
+          "$ref" : "#/definitions/CustomerDefault:customer:model:data:DataQualifier:DataUsage",
+          "description" : "Qualified data usage"
+        }
+      }
+    },
+    "CustomerDefault:customer:model:xp:AncillaryDocumentXP":{
+      "type" : "object",
+      "id" : "CustomerDefault:customer:model:xp:AncillaryDocumentXP",
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "description" : "Conztanz internal ID"
+        },
+        "_uuid" : {
+          "type" : "string",
+          "description" : "Conztanz internal UUID"
+        },
+        "documentValue" : {
+          "$ref" : "#/definitions/CustomerDefault:travel:model:purchase:Price",
+          "description" : "Base currency document value"
+        },
+        "empty" : {
+          "type" : "boolean",
+          "description" : "True if the related travel is identified as not having any relevant information"
+        },
+        "issuanceTimestamp" : {
+          "type" : "array",
+          "description" : "Issuance Timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "issuanceToNextScheduledDeparture" : {
+          "type" : "integer",
+          "description" : "Time in days between the document issuance date and the next scheduled departure date"
+        },
+        "refundTimestamp" : {
+          "type" : "array",
+          "description" : "If the document was refunded: refund timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "revalidationCounter" : {
+          "type" : "integer",
+          "description" : "If the document was revalidated: number of revalidation"
+        },
+        "revalidationTimestamp" : {
+          "type" : "array",
+          "description" : "If the document was revalidated: revalidation timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "travelUuid" : {
+          "type" : "string",
+          "description" : "UUID of the travel associated to this XP"
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "Type of the service request containing this document",
+          "enum" : [ "EXTRA", "MEAL", "SEAT", "XBAG" ]
+        },
+        "voidanceTimestamp" : {
+          "type" : "array",
+          "description" : "If the document was voided: voidance timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        }
+      }
+    },
+    "CustomerDefault:customer:model:xp:AncillaryXP":{
+      "type" : "object",
+      "id" : "CustomerDefault:customer:model:xp:AncillaryXP",
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "description" : "Conztanz internal ID"
+        },
+        "_uuid" : {
+          "type" : "string",
+          "description" : "Conztanz internal UUID"
+        },
+        "cancellationOrigin" : {
+          "type" : "string",
+          "description" : "If the ancillary was cancelled this indicates if the cancellation was done voluntarly or if it is not known what caused it",
+          "enum" : [ "VOLUNTARY", "UNKNOWN_ORIGINATOR" ]
+        },
+        "cancellationTimestamp" : {
+          "type" : "array",
+          "description" : "If the ancillary was cancelled: cancellation timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "code" : {
+          "type" : "string",
+          "description" : "Requested service item code"
+        },
+        "commercialCompany" : {
+          "type" : "string",
+          "description" : "Code of the commercial company for this ancillary's associated transport"
+        },
+        "creationTimestamp" : {
+          "type" : "array",
+          "description" : "Creation Timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "empty" : {
+          "type" : "boolean",
+          "description" : "True if the related travel is identified as not having any relevant information"
+        },
+        "estimatedValue" : {
+          "$ref" : "#/definitions/CustomerDefault:travel:model:purchase:Price",
+          "description" : "Base currency estimated value"
+        },
+        "issuanceTimestamp" : {
+          "type" : "array",
+          "description" : "Issuance Timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "operationalCompany" : {
+          "type" : "string",
+          "description" : "Code of the operational company for this ancillary's associated transport"
+        },
+        "plannedUsageTimestamp" : {
+          "type" : "array",
+          "description" : "Indicates when this ancillary is suppose to be consumed, usually to flight date it is associated with (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "rfic" : {
+          "$ref" : "#/definitions/CustomerDefault:customer:model:xp:RficDefinition",
+          "description" : "The special service Reason For Issuance Code (serviceFamily in travel) and Reason for Issuance Subcode (RFISC)"
+        },
+        "transportIssuanceTimestamp" : {
+          "type" : "array",
+          "description" : "Issuance timestamp of the associated transport (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "travelUuid" : {
+          "type" : "string",
+          "description" : "UUID of the travel associated to this XP"
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "Type of the service request containing this ancillary",
+          "enum" : [ "EXTRA", "MEAL", "SEAT", "XBAG" ]
+        },
+        "usageTimestamp" : {
+          "type" : "array",
+          "description" : "Usage Timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        }
+      }
+    },
+    "CustomerDefault:customer:model:xp:RficDefinition":{
+      "type" : "object",
+      "id" : "CustomerDefault:customer:model:xp:RficDefinition",
+      "properties" : {
+        "code" : {
+          "type" : "string",
+          "description" : "The ancillary Reason For Issuance Code (RFIC); possible values: A (Air Transportation), B (Surface Transportation/Non-air Services), C (Baggage), D (Financial Impact), E (Airport Services), F (Merchandise), G (In-flight Services)"
+        },
+        "subcode" : {
+          "type" : "string",
+          "description" : "The ancillary Reason For Issuance SubCode (RFISC)"
+        }
+      }
+    },
+    "CustomerDefault:customer:model:xp:TransportXP":{
+      "type" : "object",
+      "id" : "CustomerDefault:customer:model:xp:TransportXP",
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "description" : "Conztanz internal ID"
+        },
+        "_uuid" : {
+          "type" : "string",
+          "description" : "Conztanz internal UUID"
+        },
+        "arrival" : {
+          "$ref" : "#/definitions/CustomerDefault:model:standard:geography:StationPoint",
+          "description" : "Details about the transport destination"
+        },
+        "boarded" : {
+          "type" : "boolean",
+          "description" : "True if the passenger was boarded"
+        },
+        "boardingReport" : {
+          "type" : "string",
+          "description" : "Boarding report, ie what is the reason for not boarding for instance"
+        },
+        "cancellationOrigin" : {
+          "type" : "string",
+          "description" : "If the transport was cancelled this indicates if the cancellation was done voluntarly or if it is not known what caused it",
+          "enum" : [ "VOLUNTARY", "UNKNOWN_ORIGINATOR" ]
+        },
+        "cancellationTimestamp" : {
+          "type" : "array",
+          "description" : "Cancellation Timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "checkinChannel" : {
+          "type" : "string",
+          "description" : "Channel used by a passenger to checkin for a specific transport"
+        },
+        "checkinType" : {
+          "type" : "string",
+          "description" : "Channel type used by a passenger to checkin for a specific transport"
+        },
+        "commercialBookingClass" : {
+          "type" : "string",
+          "description" : "Commercial booking class. In airline context, it is typically the marketing airline booking class"
+        },
+        "commercialCompany" : {
+          "type" : "string",
+          "description" : "Code of the commercial company for this transport"
+        },
+        "creationTimestamp" : {
+          "type" : "array",
+          "description" : "Creation Timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "departure" : {
+          "$ref" : "#/definitions/CustomerDefault:model:standard:geography:StationPoint",
+          "description" : "Details about the transport origin"
+        },
+        "distance" : {
+          "type" : "integer",
+          "description" : "Distance in km between the origin and destination of the transport"
+        },
+        "empty" : {
+          "type" : "boolean",
+          "description" : "True if the related travel is identified as not having any relevant information"
+        },
+        "estimatedValue" : {
+          "$ref" : "#/definitions/CustomerDefault:travel:model:purchase:Price",
+          "description" : "Base currency estimated value"
+        },
+        "issuanceTimestamp" : {
+          "type" : "array",
+          "description" : "Issuance Timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "operationalCompany" : {
+          "type" : "string",
+          "description" : "Code of the operational company for this transport"
+        },
+        "travelUuid" : {
+          "type" : "string",
+          "description" : "UUID of the travel associated to this XP"
+        },
+        "usageTimestamp" : {
+          "type" : "array",
+          "description" : "Usage Timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        }
+      }
+    },
+    "CustomerDefault:customer:model:xp:TravelDocumentXP":{
+      "type" : "object",
+      "id" : "CustomerDefault:customer:model:xp:TravelDocumentXP",
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "description" : "Conztanz internal ID"
+        },
+        "_uuid" : {
+          "type" : "string",
+          "description" : "Conztanz internal UUID"
+        },
+        "documentValue" : {
+          "$ref" : "#/definitions/CustomerDefault:travel:model:purchase:Price",
+          "description" : "Base currency document value"
+        },
+        "empty" : {
+          "type" : "boolean",
+          "description" : "True if the related travel is identified as not having any relevant information"
+        },
+        "issuanceTimestamp" : {
+          "type" : "array",
+          "description" : "Issuance Timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "issuanceToNextScheduledDeparture" : {
+          "type" : "integer",
+          "description" : "Time in days between the document issuance date and the next scheduled departure date"
+        },
+        "refundTimestamp" : {
+          "type" : "array",
+          "description" : "If the document was refunded: refund timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "revalidationCounter" : {
+          "type" : "integer",
+          "description" : "If the document was revalidated: number of revalidation"
+        },
+        "revalidationTimestamp" : {
+          "type" : "array",
+          "description" : "If the document was revalidated: revalidation timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "travelUuid" : {
+          "type" : "string",
+          "description" : "UUID of the travel associated to this XP"
+        },
+        "voidanceTimestamp" : {
+          "type" : "array",
+          "description" : "If the document was voided: voidance timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        }
+      }
+    },
+    "CustomerDefault:customer:model:xp:TravelXP":{
+      "type" : "object",
+      "id" : "CustomerDefault:customer:model:xp:TravelXP",
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "description" : "Conztanz internal ID"
+        },
+        "_uuid" : {
+          "type" : "string",
+          "description" : "Conztanz internal UUID"
+        },
+        "businessProbability" : {
+          "type" : "integer",
+          "description" : "Probability (in percent) that the travel is business"
+        },
+        "creationTimestamp" : {
+          "type" : "array",
+          "description" : "Creation Timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "creator" : {
+          "$ref" : "#/definitions/CustomerDefault:travel:model:identification:booking:Office",
+          "description" : "Point of sale office details"
+        },
+        "empty" : {
+          "type" : "boolean",
+          "description" : "True if the related travel is identified as not having any relevant information"
+        },
+        "firstTransportIssuanceToFirstAncillaryIssuance" : {
+          "type" : "integer",
+          "description" : "Time in days between the first transport issuance date and the first ancillary issuance date"
+        },
+        "issuanceTimestamp" : {
+          "type" : "array",
+          "description" : "Issuance Timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "usageTimestamp" : {
+          "type" : "array",
+          "description" : "Usage Timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        }
+      }
+    },
+    "CustomerDefault:model:person:LoyaltyProgramData":{
+      "type" : "object",
+      "id" : "CustomerDefault:model:person:LoyaltyProgramData",
+      "properties" : {
+        "customerValue" : {
+          "type" : "integer",
+          "description" : "Loyalty program customer value"
+        },
+        "level" : {
+          "type" : "string",
+          "description" : "Loyalty program level"
+        },
+        "levelDescription" : {
+          "type" : "string",
+          "description" : "Loyalty program level description"
+        },
+        "priority" : {
+          "type" : "string",
+          "description" : "Loyalty program priority code"
+        }
+      }
+    },
+    "CustomerDefault:model:person:LoyaltyProgramID":{
+      "type" : "object",
+      "id" : "CustomerDefault:model:person:LoyaltyProgramID",
+      "properties" : {
+        "company" : {
+          "type" : "string",
+          "description" : "Loyalty program company (airline)"
+        },
+        "number" : {
+          "type" : "string",
+          "description" : "Loyalty program number (i.e. frequent traveler number)"
+        }
+      }
+    },
+    "CustomerDefault:model:person:Name":{
+      "type" : "object",
+      "id" : "CustomerDefault:model:person:Name",
+      "properties" : {
+        "first" : {
+          "type" : "string",
+          "description" : "First name"
+        },
+        "last" : {
+          "type" : "string",
+          "description" : "Last name"
+        },
+        "middle" : {
+          "type" : "string",
+          "description" : "Middle name"
+        }
+      }
+    },
+    "CustomerDefault:model:person:PersonalData":{
+      "type" : "object",
+      "id" : "CustomerDefault:model:person:PersonalData",
+      "properties" : {
+        "birthDate" : {
+          "type" : "array",
+          "description" : "Person's birth date (format=[yyyy][MM][dd])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 3,
+          "minItems" : 3
+        },
+        "birthPlace" : {
+          "type" : "string",
+          "description" : "Person's birth place"
+        },
+        "genderCode" : {
+          "type" : "string",
+          "description" : "Person's gender code"
+        },
+        "nationalities" : {
+          "type" : "array",
+          "description" : "Person's nationalities",
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "titleCode" : {
+          "type" : "string",
+          "description" : "Person's title code"
+        }
+      }
+    },
+    "CustomerDefault:model:person:contact:Address":{
+      "type" : "object",
+      "id" : "CustomerDefault:model:person:contact:Address",
+      "properties" : {
+        "city" : {
+          "type" : "string",
+          "description" : "City name"
+        },
+        "company" : {
+          "type" : "string",
+          "description" : "Company name to be used for business address only"
+        },
+        "country" : {
+          "type" : "string",
+          "description" : "Country (name or code)"
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "Name associated to this address"
+        },
+        "postBox" : {
+          "type" : "string",
+          "description" : "Post box"
+        },
+        "postCode" : {
+          "type" : "string",
+          "description" : "Postal code"
+        },
+        "state" : {
+          "type" : "string",
+          "description" : "State, province or county name"
+        },
+        "street1" : {
+          "type" : "string",
+          "description" : "Street address line 1"
+        },
+        "street2" : {
+          "type" : "string",
+          "description" : "Street address line 2"
+        },
+        "tags" : {
+          "type" : "array",
+          "description" : "Tags defining the contact",
+          "items" : {
+            "type" : "string",
+            "enum" : [ "AGENCY", "APIS", "ASSIGNED", "BILLING", "COMMUNICATION", "DELIVERY", "DESTINATION", "DISRUPTION", "EMERGENCY", "FAX", "FIXED", "MAILING", "MOBILE", "OTHER", "PERSO", "PHYSICAL", "PRO", "VERIFICATION" ]
+          }
+        }
+      }
+    },
+    "CustomerDefault:model:person:contact:EmailAddress":{
+      "type" : "object",
+      "id" : "CustomerDefault:model:person:contact:EmailAddress",
+      "properties" : {
+        "address" : {
+          "type" : "string",
+          "description" : "Email address"
+        }
+      }
+    },
+    "CustomerDefault:model:person:identification:DocumentID":{
+      "type" : "object",
+      "id" : "CustomerDefault:model:person:identification:DocumentID",
+      "properties" : {
+        "countryCode" : {
+          "type" : "string",
+          "description" : "Code of the country associated with the document (usually that has issued it)"
+        },
+        "number" : {
+          "type" : "string",
+          "description" : "Document number"
+        },
+        "typeCode" : {
+          "type" : "string",
+          "description" : "Code of the document type (eg: P: Passport, IP: Passport Care, F: Approuved Non-Standard, A, I, and C: Identity Card)"
+        }
+      }
+    },
+    "CustomerDefault:model:person:identification:IdentificationData":{
+      "type" : "object",
+      "id" : "CustomerDefault:model:person:identification:IdentificationData",
+      "properties" : {
+        "birthDate" : {
+          "type" : "array",
+          "description" : "Document owner's birth date (format=[yyyy][MM][dd])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 3,
+          "minItems" : 3
+        },
+        "genderCode" : {
+          "type" : "string",
+          "description" : "Document owner's gender code associated with this identification"
+        },
+        "name" : {
+          "$ref" : "#/definitions/CustomerDefault:model:person:Name",
+          "description" : "Document owner's full name associated with this identification"
+        },
+        "nationality" : {
+          "type" : "string",
+          "description" : "Document owner's nationality associated with this identification (usually the issuer of that document)"
+        }
+      }
+    },
+    "CustomerDefault:model:standard:geography:Station":{
+      "type" : "object",
+      "id" : "CustomerDefault:model:standard:geography:Station",
+      "properties" : {
+        "code" : {
+          "type" : "string",
+          "description" : "IATA station code (e.g.: CDG for Charles de Gaulle airport)"
+        },
+        "jetlag" : {
+          "type" : "array",
+          "description" : "Station time difference relative to GMT (format=[hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 4,
+          "minItems" : 4
+        }
+      }
+    },
+    "CustomerDefault:model:standard:geography:StationPoint":{
+      "type" : "object",
+      "id" : "CustomerDefault:model:standard:geography:StationPoint",
+      "properties" : {
+        "localDate" : {
+          "type" : "array",
+          "description" : "Local date associated to the service to be delivered (format=[yyyy][MM][dd])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 3,
+          "minItems" : 3
+        },
+        "localTime" : {
+          "type" : "array",
+          "description" : "Local time associated to the service to be delivered (format=[hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 4,
+          "minItems" : 4
+        },
+        "station" : {
+          "$ref" : "#/definitions/CustomerDefault:model:standard:geography:Station",
+          "description" : "Station definition"
+        }
+      }
+    },
+    "CustomerDefault:travel:model:identification:booking:Office":{
+      "type" : "object",
+      "id" : "CustomerDefault:travel:model:identification:booking:Office",
+      "properties" : {
+        "iataId" : {
+          "type" : "string",
+          "description" : "IATA office ID"
+        },
+        "officeId" : {
+          "type" : "string",
+          "description" : "PSS internal office ID"
+        }
+      }
+    },
+    "CustomerDefault:travel:model:purchase:Price":{
+      "type" : "object",
+      "id" : "CustomerDefault:travel:model:purchase:Price",
+      "properties" : {
+        "amount" : {
+          "type" : "number",
+          "description" : "Price amount"
+        },
+        "currencyCode" : {
+          "type" : "string",
+          "description" : "Price currency code"
+        }
+      }
+    }
+  }
+}

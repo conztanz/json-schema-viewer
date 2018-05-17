@@ -1,0 +1,2527 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "TravelClean:model:person:LoyaltyProgram":{
+      "type" : "object",
+      "id" : "TravelClean:model:person:LoyaltyProgram",
+      "properties" : {
+        "data" : {
+          "$ref" : "#/definitions/TravelClean:model:person:LoyaltyProgramData",
+          "description" : "Loyalty program's associated data (level and priority for instance)"
+        },
+        "reference" : {
+          "$ref" : "#/definitions/TravelClean:model:person:LoyaltyProgramID",
+          "description" : "Loyalty program's reference (company and number for instance)"
+        }
+      }
+    },
+    "TravelClean:model:person:LoyaltyProgramData":{
+      "type" : "object",
+      "id" : "TravelClean:model:person:LoyaltyProgramData",
+      "properties" : {
+        "customerValue" : {
+          "type" : "integer",
+          "description" : "Loyalty program customer value"
+        },
+        "level" : {
+          "type" : "string",
+          "description" : "Loyalty program level"
+        },
+        "levelDescription" : {
+          "type" : "string",
+          "description" : "Loyalty program level description"
+        },
+        "priority" : {
+          "type" : "string",
+          "description" : "Loyalty program priority code"
+        }
+      }
+    },
+    "TravelClean:model:person:LoyaltyProgramID":{
+      "type" : "object",
+      "id" : "TravelClean:model:person:LoyaltyProgramID",
+      "properties" : {
+        "company" : {
+          "type" : "string",
+          "description" : "Loyalty program company (airline)"
+        },
+        "number" : {
+          "type" : "string",
+          "description" : "Loyalty program number (i.e. frequent traveler number)"
+        }
+      }
+    },
+    "TravelClean:model:person:Name":{
+      "type" : "object",
+      "id" : "TravelClean:model:person:Name",
+      "properties" : {
+        "first" : {
+          "type" : "string",
+          "description" : "First name"
+        },
+        "last" : {
+          "type" : "string",
+          "description" : "Last name"
+        },
+        "middle" : {
+          "type" : "string",
+          "description" : "Middle name"
+        }
+      }
+    },
+    "TravelClean:model:person:contact:Address":{
+      "type" : "object",
+      "id" : "TravelClean:model:person:contact:Address",
+      "properties" : {
+        "city" : {
+          "type" : "string",
+          "description" : "City name"
+        },
+        "company" : {
+          "type" : "string",
+          "description" : "Company name to be used for business address only"
+        },
+        "country" : {
+          "type" : "string",
+          "description" : "Country (name or code)"
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "Name associated to this address"
+        },
+        "postBox" : {
+          "type" : "string",
+          "description" : "Post box"
+        },
+        "postCode" : {
+          "type" : "string",
+          "description" : "Postal code"
+        },
+        "state" : {
+          "type" : "string",
+          "description" : "State, province or county name"
+        },
+        "street1" : {
+          "type" : "string",
+          "description" : "Street address line 1"
+        },
+        "street2" : {
+          "type" : "string",
+          "description" : "Street address line 2"
+        },
+        "tags" : {
+          "type" : "array",
+          "description" : "Tags defining the contact",
+          "items" : {
+            "type" : "string",
+            "enum" : [ "AGENCY", "APIS", "ASSIGNED", "BILLING", "COMMUNICATION", "DELIVERY", "DESTINATION", "DISRUPTION", "EMERGENCY", "FAX", "FIXED", "MAILING", "MOBILE", "OTHER", "PERSO", "PHYSICAL", "PRO", "VERIFICATION" ]
+          }
+        }
+      }
+    },
+    "TravelClean:model:person:contact:Email":{
+      "type" : "object",
+      "id" : "TravelClean:model:person:contact:Email",
+      "properties" : {
+        "address" : {
+          "type" : "string",
+          "description" : "Here for backward compatibility during address -> emailAddress.address migration"
+        },
+        "emailAddress" : {
+          "$ref" : "#/definitions/TravelClean:model:person:contact:EmailAddress",
+          "description" : "Email address definition"
+        },
+        "tags" : {
+          "type" : "array",
+          "description" : "Tags defining the contact",
+          "items" : {
+            "type" : "string",
+            "enum" : [ "AGENCY", "APIS", "ASSIGNED", "BILLING", "COMMUNICATION", "DELIVERY", "DESTINATION", "DISRUPTION", "EMERGENCY", "FAX", "FIXED", "MAILING", "MOBILE", "OTHER", "PERSO", "PHYSICAL", "PRO", "VERIFICATION" ]
+          }
+        }
+      }
+    },
+    "TravelClean:model:person:contact:EmailAddress":{
+      "type" : "object",
+      "id" : "TravelClean:model:person:contact:EmailAddress",
+      "properties" : {
+        "address" : {
+          "type" : "string",
+          "description" : "Email address"
+        }
+      }
+    },
+    "TravelClean:model:person:contact:OtherContact":{
+      "type" : "object",
+      "id" : "TravelClean:model:person:contact:OtherContact",
+      "properties" : {
+        "data" : {
+          "type" : "string",
+          "description" : "Free text defining the contact"
+        },
+        "tags" : {
+          "type" : "array",
+          "description" : "Tags defining the contact",
+          "items" : {
+            "type" : "string",
+            "enum" : [ "AGENCY", "APIS", "ASSIGNED", "BILLING", "COMMUNICATION", "DELIVERY", "DESTINATION", "DISRUPTION", "EMERGENCY", "FAX", "FIXED", "MAILING", "MOBILE", "OTHER", "PERSO", "PHYSICAL", "PRO", "VERIFICATION" ]
+          }
+        }
+      }
+    },
+    "TravelClean:model:person:contact:Phone":{
+      "type" : "object",
+      "id" : "TravelClean:model:person:contact:Phone",
+      "properties" : {
+        "countryCode" : {
+          "type" : "string",
+          "description" : "Phone country code (eg: FR)"
+        },
+        "countryPrefix" : {
+          "type" : "string",
+          "description" : "Here for backward compatibility during countryPrefix -> phoneNumber.areaCode migration"
+        },
+        "number" : {
+          "type" : "string",
+          "description" : "TODO Here for backward compatibility during number -> phoneNumber.localNumber migration"
+        },
+        "phoneNumber" : {
+          "$ref" : "#/definitions/TravelClean:model:person:contact:PhoneNumber",
+          "description" : "Phone number definition"
+        },
+        "tags" : {
+          "type" : "array",
+          "description" : "Tags defining the contact",
+          "items" : {
+            "type" : "string",
+            "enum" : [ "AGENCY", "APIS", "ASSIGNED", "BILLING", "COMMUNICATION", "DELIVERY", "DESTINATION", "DISRUPTION", "EMERGENCY", "FAX", "FIXED", "MAILING", "MOBILE", "OTHER", "PERSO", "PHYSICAL", "PRO", "VERIFICATION" ]
+          }
+        }
+      }
+    },
+    "TravelClean:model:person:contact:PhoneNumber":{
+      "type" : "object",
+      "id" : "TravelClean:model:person:contact:PhoneNumber",
+      "properties" : {
+        "areaCode" : {
+          "type" : "string",
+          "description" : "Phone number area code (eg. 33)"
+        },
+        "localNumber" : {
+          "type" : "string",
+          "description" : "Phone number local number"
+        }
+      }
+    },
+    "TravelClean:model:person:identification:DocumentID":{
+      "type" : "object",
+      "id" : "TravelClean:model:person:identification:DocumentID",
+      "properties" : {
+        "countryCode" : {
+          "type" : "string",
+          "description" : "Code of the country associated with the document (usually that has issued it)"
+        },
+        "number" : {
+          "type" : "string",
+          "description" : "Document number"
+        },
+        "typeCode" : {
+          "type" : "string",
+          "description" : "Code of the document type (eg: P: Passport, IP: Passport Care, F: Approuved Non-Standard, A, I, and C: Identity Card)"
+        }
+      }
+    },
+    "TravelClean:model:person:identification:Identification":{
+      "type" : "object",
+      "id" : "TravelClean:model:person:identification:Identification",
+      "properties" : {
+        "birthDate" : {
+          "type" : "array",
+          "description" : "Here for backward compatibility during birthDate -> data.birthDate migration",
+          "items" : {
+            "type" : "integer"
+          }
+        },
+        "data" : {
+          "$ref" : "#/definitions/TravelClean:model:person:identification:IdentificationData",
+          "description" : "Identification document associated data"
+        },
+        "expiryDate" : {
+          "type" : "array",
+          "description" : "Identification document expiry date (format=[yyyy][MM][dd])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 3,
+          "minItems" : 3
+        },
+        "genderCode" : {
+          "type" : "string",
+          "description" : "Here for backward compatibility during genderCode -> data.genderCode migration"
+        },
+        "name" : {
+          "$ref" : "#/definitions/TravelClean:model:person:Name",
+          "description" : "Here for backward compatibility during name -> data.name migration"
+        },
+        "nationality" : {
+          "type" : "string",
+          "description" : "Here for backward compatibility during nationality -> data.nationality migration"
+        },
+        "reference" : {
+          "$ref" : "#/definitions/TravelClean:model:person:identification:DocumentID",
+          "description" : "Reference of the document"
+        }
+      }
+    },
+    "TravelClean:model:person:identification:IdentificationData":{
+      "type" : "object",
+      "id" : "TravelClean:model:person:identification:IdentificationData",
+      "properties" : {
+        "birthDate" : {
+          "type" : "array",
+          "description" : "Document owner's birth date (format=[yyyy][MM][dd])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 3,
+          "minItems" : 3
+        },
+        "genderCode" : {
+          "type" : "string",
+          "description" : "Document owner's gender code associated with this identification"
+        },
+        "name" : {
+          "$ref" : "#/definitions/TravelClean:model:person:Name",
+          "description" : "Document owner's full name associated with this identification"
+        },
+        "nationality" : {
+          "type" : "string",
+          "description" : "Document owner's nationality associated with this identification (usually the issuer of that document)"
+        }
+      }
+    },
+    "TravelClean:model:person:identification:Visa":{
+      "type" : "object",
+      "id" : "TravelClean:model:person:identification:Visa",
+      "properties" : {
+        "birthPlace" : {
+          "type" : "string",
+          "description" : "Traveler's birth place"
+        },
+        "issuingDate" : {
+          "type" : "array",
+          "description" : "VISA issuing date (format=[yyyy][MM][dd])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 3,
+          "minItems" : 3
+        },
+        "issuingPlace" : {
+          "type" : "string",
+          "description" : "Visa issuing place"
+        },
+        "reference" : {
+          "$ref" : "#/definitions/TravelClean:model:person:identification:DocumentID",
+          "description" : "Reference of the document"
+        }
+      }
+    },
+    "TravelClean:model:person:preference:Preference":{
+      "type" : "object",
+      "id" : "TravelClean:model:person:preference:Preference",
+      "properties" : {
+        "languages" : {
+          "type" : "array",
+          "description" : "Traveler prefered languages of communication",
+          "items" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "TravelClean:model:standard:Designator":{
+      "type" : "object",
+      "id" : "TravelClean:model:standard:Designator",
+      "properties" : {
+        "companyCode" : {
+          "type" : "string",
+          "description" : "Regular company code as used in PSS systems. In airline context, this is typically the carrier code in 2 or 3 characters format"
+        },
+        "numberIATA" : {
+          "type" : "string",
+          "description" : "Designator number using IATA format"
+        },
+        "suffix" : {
+          "type" : "string",
+          "description" : "Designator suffix. In airline context, used to distinguish a postponed flight from the one already scheduled the same day"
+        }
+      }
+    },
+    "TravelClean:model:standard:geography:Station":{
+      "type" : "object",
+      "id" : "TravelClean:model:standard:geography:Station",
+      "properties" : {
+        "code" : {
+          "type" : "string",
+          "description" : "IATA station code (e.g.: CDG for Charles de Gaulle airport)"
+        },
+        "jetlag" : {
+          "type" : "array",
+          "description" : "Station time difference relative to GMT (format=[hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 4,
+          "minItems" : 4
+        }
+      }
+    },
+    "TravelClean:model:standard:geography:Stopover":{
+      "type" : "object",
+      "id" : "TravelClean:model:standard:geography:Stopover",
+      "properties" : {
+        "localDate" : {
+          "type" : "array",
+          "description" : "Local date associated to the service to be delivered (format=[yyyy][MM][dd])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 3,
+          "minItems" : 3
+        },
+        "localTime" : {
+          "type" : "array",
+          "description" : "Local time associated to the service to be delivered (format=[hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 4,
+          "minItems" : 4
+        },
+        "station" : {
+          "$ref" : "#/definitions/TravelClean:model:standard:geography:Station",
+          "description" : "Station definition"
+        },
+        "terminal" : {
+          "type" : "string",
+          "description" : "Station terminal"
+        }
+      }
+    },
+    "TravelClean:travel:model:Travel":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:Travel",
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "description" : "Conztanz internal ID"
+        },
+        "_uuid" : {
+          "type" : "string",
+          "description" : "Conztanz internal UUID"
+        },
+        "businessProbability" : {
+          "type" : "integer",
+          "description" : "Probability (in percent) that the travel is business"
+        },
+        "customerId" : {
+          "type" : "string",
+          "description" : "Traveler customer ID"
+        },
+        "empty" : {
+          "type" : "boolean",
+          "description" : "True if the travel is identified as not having any relevant information"
+        },
+        "extraRequests" : {
+          "type" : "array",
+          "description" : "Extra requests (ssr) and their potential associated pricing (tarification) and/or receipt (ticket/document). Extra requests are transport based, which means they are always linked to a transport. eg. Unaccompagnied Minor",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:trip:IExtraPurchaseDefault"
+          }
+        },
+        "id" : {
+          "type" : "integer",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        },
+        "mealRequests" : {
+          "type" : "array",
+          "description" : "Meal requests (inboard meal SSR) and their potential associated pricing (tarification) and/or receipt (ticket/document). Meal requests are transport based, which means they are always linked to a transport. eg: Vegetarian Meal",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:trip:IMealPurchaseDefault"
+          }
+        },
+        "otherPurchases" : {
+          "type" : "array",
+          "description" : "Other requests (standalone ssr/svc) and their potential associated pricing (tarification) and/or receipt (ticket/document). Other requests are NOT transport based, which means they are NOT linked to a transport. eg: Lounge Access",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:miscellaneous:IOtherServicePurchaseDefault"
+          }
+        },
+        "processingTimestamp" : {
+          "type" : "array",
+          "description" : "Travel internal update timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "reference" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:identification:booking:TravelID",
+          "description" : "PSS external reference, ie combination of PNR and passenger tattoo"
+        },
+        "remarks" : {
+          "type" : "array",
+          "description" : "General remarks regarding the travel",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:miscellaneous:Remark"
+          }
+        },
+        "removed" : {
+          "type" : "boolean",
+          "description" : "True if should be considered as removed, ie the traveler is not present in the PNR anymore, eg: removed by an agent after a pnr split"
+        },
+        "seatRequests" : {
+          "type" : "array",
+          "description" : "Seat requests and their potential associated pricing (tarification) and/or receipt (ticket/document). Seat requests are transport based, which means they are always linked to a transport. eg. extra leg room seat",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:trip:ISeatPurchaseDefault"
+          }
+        },
+        "transports" : {
+          "type" : "array",
+          "description" : "All the transports (segments) booked or requested by the traveler with their details (departure date & time, origin, destination, terminal, etc...) and status (eg. cancelled, confirmed, etc...)",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:trip:Transport"
+          }
+        },
+        "traveler" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:traveler:Traveler",
+          "description" : "Data regarding the passenger involved in the travel"
+        },
+        "tripPurchases" : {
+          "type" : "array",
+          "description" : "Transport acts of purchase, pricing (tarification) and/or receipt (ticket/document) associated to the purchase of one or more transports.",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:trip:ITripPurchaseDefault"
+          }
+        },
+        "uuid" : {
+          "type" : "string",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        },
+        "xbagRequests" : {
+          "type" : "array",
+          "description" : "XBAG requests (extra baggage ssr) and their potential associated pricing (tarification) and/or receipt (ticket/document). Xbag requests are transport based, which means they are always linked to a transport. eg. Sport Equipment or 1 additional piece of luggage",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:trip:IXBagPurchaseDefault"
+          }
+        }
+      }
+    },
+    "TravelClean:travel:model:identification:booking:Office":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:identification:booking:Office",
+      "properties" : {
+        "iataId" : {
+          "type" : "string",
+          "description" : "IATA office ID"
+        },
+        "officeId" : {
+          "type" : "string",
+          "description" : "PSS internal office ID"
+        }
+      }
+    },
+    "TravelClean:travel:model:identification:booking:PNR":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:identification:booking:PNR",
+      "properties" : {
+        "creator" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:identification:booking:PointOfSale",
+          "description" : "PNR creator details"
+        },
+        "creatorStamp" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:identification:booking:Stamp",
+          "description" : "PNR creator validation stamp"
+        },
+        "groupName" : {
+          "type" : "string",
+          "description" : "PNR group name if applicable"
+        },
+        "owner" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:identification:booking:PointOfSale",
+          "description" : "PNR owner details"
+        },
+        "recordLocator" : {
+          "type" : "string",
+          "description" : "PNR record locator"
+        },
+        "updateTimestamp" : {
+          "type" : "array",
+          "description" : "PNR last update timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "updater" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:identification:booking:PointOfSale",
+          "description" : "PNR last updater details"
+        }
+      }
+    },
+    "TravelClean:travel:model:identification:booking:PointOfSale":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:identification:booking:PointOfSale",
+      "properties" : {
+        "office" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:identification:booking:Office",
+          "description" : "Point of sale office details"
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "Point of sale type"
+        }
+      }
+    },
+    "TravelClean:travel:model:identification:booking:Split":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:identification:booking:Split",
+      "properties" : {
+        "officeId" : {
+          "type" : "string",
+          "description" : "The PSS internal office ID which performed the record (typically PNR) split"
+        },
+        "parentCreationDate" : {
+          "type" : "array",
+          "description" : "Split parent creation date (format=[yyyy][MM][dd])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 3,
+          "minItems" : 3
+        },
+        "parentRecordLocator" : {
+          "type" : "string",
+          "description" : "Split parent record locator"
+        },
+        "signIn" : {
+          "type" : "string",
+          "description" : "Split originator agent sign in"
+        }
+      }
+    },
+    "TravelClean:travel:model:identification:booking:Stamp":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:identification:booking:Stamp",
+      "properties" : {
+        "signIn" : {
+          "type" : "string",
+          "description" : "Validation agent sign in"
+        },
+        "timestamp" : {
+          "type" : "array",
+          "description" : "Validation timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        }
+      }
+    },
+    "TravelClean:travel:model:identification:booking:TravelID":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:identification:booking:TravelID",
+      "properties" : {
+        "passengerTattoo" : {
+          "type" : "integer",
+          "description" : "PSS internal reference of the passenger within the PNR"
+        },
+        "pnr" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:identification:booking:PNR",
+          "description" : "PSS PNR reference"
+        },
+        "splitData" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:identification:booking:Split",
+          "description" : "Data regarding the potential PNR split"
+        }
+      }
+    },
+    "TravelClean:travel:model:miscellaneous:IOtherServicePurchaseDefault":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:miscellaneous:IOtherServicePurchaseDefault",
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "description" : "Conztanz internal ID"
+        },
+        "_uuid" : {
+          "type" : "string",
+          "description" : "Conztanz internal UUID"
+        },
+        "external" : {
+          "type" : "boolean",
+          "description" : "True if this purchase is not coming from the company main GDS. Typically identifying a document received through a SSR TKNx in airline context"
+        },
+        "id" : {
+          "type" : "integer",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        },
+        "items" : {
+          "type" : "array",
+          "description" : "Requests concerned by the purchase act. (All non-chargeable requests will be grouped in a purchase without any pricing/receipt associated to it)",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:miscellaneous:IOtherServiceRequestDefault"
+          }
+        },
+        "payments" : {
+          "type" : "array",
+          "description" : "Details of payments information of the purchase",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:purchase:Payment"
+          }
+        },
+        "pricing" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:PricingBase",
+          "description" : "Materialization of all data related to the pricing of the purchase. In airline context, it is typically related to the tarification element of the PNR"
+        },
+        "receipt" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:ReceiptBase",
+          "description" : "Materialization of all data concerning purchase finalisation (i.e. ticket). In airline context, it is typically related to the document/ticket element of the PNR"
+        },
+        "restriction" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Restriction",
+          "description" : "Details of restrictions applying on the purchase"
+        },
+        "serviceFamily" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:service:ServiceDefinition",
+          "description" : "Family of the service, in airline context: Reason For Issuance Code (RFIC); possible values: A (Air Transportation), B (Surface Transportation/Non-air Services), C (Baggage), D (Financial Impact), E (Airport Services), F (Merchandise), G (In-flight Services)"
+        },
+        "synchronization" : {
+          "type" : "string",
+          "description" : "Type of synchronization of the purchase regarding its items. Values are FULL (all purchased items are present), PARTIAL (some items have been removed) & NONE (all items are removed - typically a FH PNR element for air segment).",
+          "enum" : [ "NONE", "PART", "FULL" ]
+        },
+        "uuid" : {
+          "type" : "string",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        }
+      }
+    },
+    "TravelClean:travel:model:miscellaneous:IOtherServiceRequestDefault":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:miscellaneous:IOtherServiceRequestDefault",
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "description" : "Conztanz internal ID"
+        },
+        "_uuid" : {
+          "type" : "string",
+          "description" : "Conztanz internal UUID"
+        },
+        "chargeable" : {
+          "type" : "boolean",
+          "description" : "True if the requested service is considered chargeable"
+        },
+        "code" : {
+          "type" : "string",
+          "description" : "Requested service item code. In airline context, values can be anything from IATA standard codes (RQST, VGML, XBAG, ...) to airline specific ones"
+        },
+        "companyCode" : {
+          "type" : "string",
+          "description" : "Code of the company (airline) to which the request has been sent"
+        },
+        "coupon" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:service:IServiceCouponDefault",
+          "description" : "Coupon usage associated with the requested service"
+        },
+        "creator" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:identification:booking:Office",
+          "description" : "Request creator details"
+        },
+        "creatorStamp" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:identification:booking:Stamp",
+          "description" : "Request creator validation stamp"
+        },
+        "id" : {
+          "type" : "integer",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        },
+        "reference" : {
+          "type" : "integer",
+          "description" : "PSS internal ID, (tattoo in SBR for instance)"
+        },
+        "remark" : {
+          "type" : "string",
+          "description" : "Associated remark details"
+        },
+        "removed" : {
+          "type" : "boolean",
+          "description" : "True if should be considered as removed, ie not present anymore in PNR for instance"
+        },
+        "revisions" : {
+          "type" : "array",
+          "description" : "Revisions where item was present (only used for revalidation)",
+          "items" : {
+            "type" : "integer"
+          }
+        },
+        "statusCode" : {
+          "type" : "string",
+          "description" : "Requested service status code"
+        },
+        "uuid" : {
+          "type" : "string",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        }
+      }
+    },
+    "TravelClean:travel:model:miscellaneous:Remark":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:miscellaneous:Remark",
+      "properties" : {
+        "categoryCode" : {
+          "type" : "string",
+          "description" : "Remark category code"
+        },
+        "companyCode" : {
+          "type" : "string",
+          "description" : "Remark company code"
+        },
+        "data" : {
+          "type" : "string",
+          "description" : "Remark information"
+        },
+        "reference" : {
+          "type" : "integer",
+          "description" : "PSS internal ID, (tattoo in SBR for instance)"
+        },
+        "typeCode" : {
+          "type" : "string",
+          "description" : "Remark type code. In airline context,  values are (non exhaustive list) RC: corporate remark, RI: invoice remark, RM: general remark, RQ: quality control remark, RX: confidential remark, SK: special Keyword, OS: other special information"
+        }
+      }
+    },
+    "TravelClean:travel:model:purchase:Compensation":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:purchase:Compensation",
+      "properties" : {
+        "nature" : {
+          "type" : "string",
+          "description" : "Free text from the compensation field of the PFS giving the compensation details"
+        },
+        "voluntary" : {
+          "type" : "boolean",
+          "description" : "Indicates wether the compensation was voluntary or involontary"
+        }
+      }
+    },
+    "TravelClean:travel:model:purchase:ConvertiblePrice":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:purchase:ConvertiblePrice",
+      "properties" : {
+        "amount" : {
+          "type" : "number",
+          "description" : "Here for backward compatibility -> Original currency price amount"
+        },
+        "baseCurrency" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Price",
+          "description" : "Base currency price"
+        },
+        "currencyCode" : {
+          "type" : "string",
+          "description" : "Here for backward compatibility -> Original currency price currency code"
+        },
+        "originalCurrency" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Price",
+          "description" : "Original currency price"
+        }
+      }
+    },
+    "TravelClean:travel:model:purchase:Fare":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:purchase:Fare",
+      "properties" : {
+        "baseCalculated" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Price",
+          "description" : "Base calculated price of this fare (before taxes, fees, commisions, etc...)"
+        },
+        "baseCalculation" : {
+          "type" : "string",
+          "description" : "Calculation mode of the fare. In airline context, it contains the base fare calculation as described in the tarification"
+        },
+        "basePayed" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Price",
+          "description" : "Base payed price of this fare (used if payment is done in another currency than the one used for calculation)"
+        },
+        "fees" : {
+          "type" : "array",
+          "description" : "Fees associated with this fare",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:purchase:Fee"
+          }
+        },
+        "grandTotal" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Price",
+          "description" : "Full price of this fare (including all fees)"
+        },
+        "net" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Price",
+          "description" : "Net price of this fare (including commissions)"
+        },
+        "taxes" : {
+          "type" : "array",
+          "description" : "Taxes associated with this fare",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:purchase:Tax"
+          }
+        },
+        "total" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Price",
+          "description" : "Total price of this fare (including all taxes)"
+        }
+      }
+    },
+    "TravelClean:travel:model:purchase:Fee":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:purchase:Fee",
+      "properties" : {
+        "description" : {
+          "type" : "string",
+          "description" : "fee description"
+        },
+        "typeCode" : {
+          "type" : "string",
+          "description" : "fee type"
+        },
+        "value" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Price",
+          "description" : "fee rate"
+        },
+        "vat" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Tax",
+          "description" : "VAT associated with the fee"
+        },
+        "vatIncluded" : {
+          "type" : "boolean",
+          "description" : "Vat is included in fee rate if true. It is not otherwise."
+        }
+      }
+    },
+    "TravelClean:travel:model:purchase:Payment":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:purchase:Payment",
+      "properties" : {
+        "form" : {
+          "type" : "string",
+          "description" : "Form of the payment (CC, CASH, ...), this is a free text"
+        },
+        "reference" : {
+          "type" : "integer",
+          "description" : "PSS internal ID, (tattoo in SBR for instance)"
+        },
+        "value" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Price",
+          "description" : "Price payed"
+        }
+      }
+    },
+    "TravelClean:travel:model:purchase:Price":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:purchase:Price",
+      "properties" : {
+        "amount" : {
+          "type" : "number",
+          "description" : "Price amount"
+        },
+        "currencyCode" : {
+          "type" : "string",
+          "description" : "Price currency code"
+        }
+      }
+    },
+    "TravelClean:travel:model:purchase:PricingBase":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:purchase:PricingBase",
+      "properties" : {
+        "automatic" : {
+          "type" : "boolean",
+          "description" : "True if the pricing was automatically performed (in airline context Manual VS Automatic tarification)"
+        },
+        "createTimestamp" : {
+          "type" : "array",
+          "description" : "Pricing issuing timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "exchangeRate1" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Price",
+          "description" : "First exchange rate used for this pricing"
+        },
+        "exchangeRate2" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Price",
+          "description" : "Second exchange rate used for this pricing"
+        },
+        "exchangeValue" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Price",
+          "description" : "Exchange price"
+        },
+        "fare" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Fare",
+          "description" : "Fare associated with this pricing"
+        },
+        "issuingOfficeId" : {
+          "type" : "string",
+          "description" : "Pricing issuing PSS office ID"
+        },
+        "issuingSignIn" : {
+          "type" : "string",
+          "description" : "Pricing issuing agent sign in"
+        },
+        "issuingStatusCode" : {
+          "type" : "string",
+          "description" : "Pricing issuing status code. In airline context values are: F First issue, I First issue IT, U First issue BT, R Re-issue, Y Re-issue IT, W Re-issue BT"
+        },
+        "reference" : {
+          "type" : "integer",
+          "description" : "PSS internal ID, (tattoo in SBR for instance)"
+        },
+        "refundValue" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Price",
+          "description" : "Refund price"
+        },
+        "remark" : {
+          "type" : "string",
+          "description" : "General remarks regarding the pricing"
+        },
+        "removed" : {
+          "type" : "boolean",
+          "description" : "True if should be considered as removed, ie not present anymore in PNR for instance"
+        },
+        "validityEnd" : {
+          "type" : "array",
+          "description" : "Pricing validity end timestamp (purchase must be 'payed' before this deadline if specified) (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        }
+      }
+    },
+    "TravelClean:travel:model:purchase:ReceiptBase":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:purchase:ReceiptBase",
+      "properties" : {
+        "createTimestamp" : {
+          "type" : "array",
+          "description" : "Receipt issuing timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "issuingCompanyCode" : {
+          "type" : "string",
+          "description" : "Receipt issuing company (Validating carrier code in airline context)"
+        },
+        "issuingOffice" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:identification:booking:Office",
+          "description" : "Receipt issuing office details"
+        },
+        "issuingReference" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:ReceiptReference",
+          "description" : "Receipt issuing reference details"
+        },
+        "issuingStatusCode" : {
+          "type" : "string",
+          "description" : "Receipt issuing status code. In Amadeus context values are: T Ticketing, P Printed (for ETKT only), R Refunded, V Void, I Exchanged"
+        },
+        "issuingTotalFare" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:ReceiptTotalFare",
+          "description" : "Receipt issuing total fare details"
+        },
+        "issuingTypeCode" : {
+          "type" : "string",
+          "description" : "Receipt issuing type code. In Amadeus context values are: M for Manual Ticket, A for Automatic Ticket, D for Electronic Miscellaneous Document, TE & E for Electronic ticket, TP & P for Paper ticket, TV & V for Virtual MCO, TL & L for Low-cost Carrier Ticket"
+        },
+        "reference" : {
+          "type" : "integer",
+          "description" : "PSS internal ID, (tattoo in SBR for instance)"
+        },
+        "removed" : {
+          "type" : "boolean",
+          "description" : "True if should be considered as removed, ie not present anymore in PNR for instance"
+        }
+      }
+    },
+    "TravelClean:travel:model:purchase:ReceiptReference":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:purchase:ReceiptReference",
+      "properties" : {
+        "companyCode" : {
+          "type" : "string",
+          "description" : "Code of the company in charge of receipt issuing. In airline context, it is typically the plating carrier code"
+        },
+        "conjunctiveReferenceNb" : {
+          "type" : "integer",
+          "description" : "Conjunctive reference total number if underlying purchase is divided into more than one booklet (a booklet is limited in legacy systems to 4 coupons, thus for booking with more than 4 coupons the ticket will be divided the additional ticket are called conjunctive ticket, their reference number is just the first one incremented by 1, 2, or 3 (no more than 16 coupons are authorized on the same reference) depending on the amount of conjunctive reference.)"
+        },
+        "number" : {
+          "type" : "string",
+          "description" : "Reference number. Typically in airline context it refers to the document number (ticket or EMD)"
+        }
+      }
+    },
+    "TravelClean:travel:model:purchase:ReceiptTotalFare":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:purchase:ReceiptTotalFare",
+      "properties" : {
+        "confidential" : {
+          "type" : "boolean",
+          "description" : "True is the total fare is marked as 'confidential'. In airline context it means the fare should not appear on the ticket being displayed to the customer (i.e. confidential for the customer not the airline)"
+        },
+        "value" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:ConvertiblePrice",
+          "description" : "Total fare price"
+        }
+      }
+    },
+    "TravelClean:travel:model:purchase:Restriction":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:purchase:Restriction",
+      "properties" : {
+        "endorsement" : {
+          "type" : "string",
+          "description" : "Endorsement. In airline context, endorsement as stated in the tarification"
+        },
+        "forInfant" : {
+          "type" : "boolean",
+          "description" : "True if this purchase is restricted to an infant"
+        },
+        "payment" : {
+          "type" : "string",
+          "description" : "Payment restriction. In airline context, payment restriction as stated in the tarification"
+        },
+        "tourCode" : {
+          "type" : "string",
+          "description" : "Tour code. In airline context, tour code as stated in the tarification"
+        }
+      }
+    },
+    "TravelClean:travel:model:purchase:Tax":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:purchase:Tax",
+      "properties" : {
+        "countryCode" : {
+          "type" : "string",
+          "description" : "Tax originator country code"
+        },
+        "old" : {
+          "type" : "boolean",
+          "description" : "In case of a re-issuance, if an extra cost is incurred, it will indicate whether that particular tax was paid during the first issuance (prevention of double payment)"
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "Type of the tax"
+        },
+        "value" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Price",
+          "description" : "Tax amount"
+        }
+      }
+    },
+    "TravelClean:travel:model:service:IServiceCouponDefault":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:service:IServiceCouponDefault",
+      "properties" : {
+        "number" : {
+          "type" : "integer",
+          "description" : "Number of the actual coupon"
+        },
+        "statusCode" : {
+          "type" : "string",
+          "description" : "Code of the coupon status"
+        },
+        "termOfUse" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:service:TermOfUse",
+          "description" : "Coupon global terms of use details"
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "Type of the actual coupon",
+          "enum" : [ "EXTRA", "MEAL", "SEAT", "SSR", "SVC", "TRIP", "XBAG" ]
+        }
+      }
+    },
+    "TravelClean:travel:model:service:ReceiptReferenceConnection":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:service:ReceiptReferenceConnection",
+      "properties" : {
+        "companyCode" : {
+          "type" : "string",
+          "description" : "Code of the company in charge of the connected receipt issuing. In airline context, it is typically the plating carrier code"
+        },
+        "number" : {
+          "type" : "string",
+          "description" : "Reference number. Typically in airline context it refers to the document number (ticket)"
+        }
+      }
+    },
+    "TravelClean:travel:model:service:ServiceDefinition":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:service:ServiceDefinition",
+      "properties" : {
+        "code" : {
+          "type" : "string",
+          "description" : "Code associated with of the service"
+        }
+      }
+    },
+    "TravelClean:travel:model:service:TermOfUse":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:service:TermOfUse",
+      "properties" : {
+        "autoConsumable" : {
+          "type" : "boolean",
+          "description" : "Indicates if the ancillaries service is consumed at issuance"
+        },
+        "exchangeable" : {
+          "type" : "boolean",
+          "description" : "Indicates if the ancillaries service is exchangeable"
+        },
+        "interlineable" : {
+          "type" : "boolean",
+          "description" : "Indicates if the ancillaries service is interlineable"
+        },
+        "presentAt" : {
+          "type" : "string",
+          "description" : "Indicates where the ancillary service is to be provided (e.g. Paris Orly Aiport)"
+        },
+        "presentTo" : {
+          "type" : "string",
+          "description" : "Indicates who is providing the ancillary service (e.g. Delta Airline)"
+        },
+        "refundable" : {
+          "type" : "boolean",
+          "description" : "Indicates if the ancillaries service is refundable"
+        },
+        "validityEnd" : {
+          "type" : "array",
+          "description" : "When the ancillary validity period is supposed to end (deadline) if present (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "validityStart" : {
+          "type" : "array",
+          "description" : "When the ancillary validity period is supposed to start if present (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        }
+      }
+    },
+    "TravelClean:travel:model:standard:Quantity":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:standard:Quantity",
+      "properties" : {
+        "number" : {
+          "type" : "integer",
+          "description" : "Value of the quantity"
+        },
+        "unitCode" : {
+          "type" : "string",
+          "description" : "Unit code of the quantity"
+        }
+      }
+    },
+    "TravelClean:travel:model:standard:TransportMode":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:standard:TransportMode",
+      "properties" : {
+        "commercialBookingClass" : {
+          "type" : "string",
+          "description" : "Commercial booking class. In airline context, it is typically the marketing airline booking class"
+        },
+        "commercialPhysicalClass" : {
+          "type" : "string",
+          "description" : "Commercial physical class. In airline context, it is typically the marketing airline transportation class (cabin)"
+        },
+        "operationalBookingClass" : {
+          "type" : "string",
+          "description" : "Operational booking class. In airline context, it is typically the operational airline booking class"
+        },
+        "operationalPhysicalClass" : {
+          "type" : "string",
+          "description" : "Operational physical class. In airline context, it is typically the operational airline transportation class (cabin)"
+        },
+        "physicalType" : {
+          "type" : "string",
+          "description" : "Physical type of the transport mode. In airline context, it is typically the aircraft type as designated within IATA (eg: A320)"
+        }
+      }
+    },
+    "TravelClean:travel:model:traveler:CleanableName":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:traveler:CleanableName",
+      "properties" : {
+        "clean" : {
+          "$ref" : "#/definitions/TravelClean:model:person:Name",
+          "description" : "Clean version of the passenger name, not present if the cleaning process failed"
+        }
+      }
+    },
+    "TravelClean:travel:model:traveler:Identity":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:traveler:Identity",
+      "properties" : {
+        "birthDate" : {
+          "type" : "array",
+          "description" : "Traveler's birth date (format=[yyyy][MM][dd])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 3,
+          "minItems" : 3
+        },
+        "birthPlace" : {
+          "type" : "string",
+          "description" : "Traveler's birth place"
+        },
+        "cleanIdentifications" : {
+          "type" : "array",
+          "description" : "List of clean traveler's identifications, not present if the cleaning process failed (in airline context typically DOC-S elements, contains passport info for instance)",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:model:person:identification:Identification"
+          }
+        },
+        "cleanVisas" : {
+          "type" : "array",
+          "description" : "List of clean traveler's VISAs, not present if the cleaning process failed (in airline context typically DOC-O elements)",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:model:person:identification:Visa"
+          }
+        },
+        "genderCode" : {
+          "type" : "string",
+          "description" : "Traveler's gender code"
+        },
+        "name" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:traveler:CleanableName",
+          "description" : "Traveler's full name"
+        },
+        "nationalities" : {
+          "type" : "array",
+          "description" : "Traveler's nationalities",
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "titleCode" : {
+          "type" : "string",
+          "description" : "Traveler's title code (eg: MR, DR, etc...)"
+        }
+      }
+    },
+    "TravelClean:travel:model:traveler:LoyaltyProgramUsage":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:traveler:LoyaltyProgramUsage",
+      "properties" : {
+        "id" : {
+          "$ref" : "#/definitions/TravelClean:model:person:LoyaltyProgramID",
+          "description" : "Loyalty program identification"
+        },
+        "reference" : {
+          "type" : "string",
+          "description" : "Loyalty program usage (ACCRUAL: miles accrual, AGREEMENT: miles accrual on another carrier, REDEEM : miles usage, UPGRADE: miles usage for upgrade)",
+          "enum" : [ "ACCRUAL", "REDEEM", "UPGRADE", "AGREEMENT" ]
+        },
+        "tattoo" : {
+          "type" : "integer",
+          "description" : "PSS internal ID, (tattoo in SBR for instance)"
+        }
+      }
+    },
+    "TravelClean:travel:model:traveler:Traveler":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:traveler:Traveler",
+      "properties" : {
+        "contacts" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:traveler:contact:Contacts",
+          "description" : "Traveler's contacts (addresses, email, or phones for instance)"
+        },
+        "identity" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:traveler:Identity",
+          "description" : "Traveler's identity details (name, title, gendre, etc...)"
+        },
+        "infantIdentity" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:traveler:Identity",
+          "description" : "Traveler's associated infant identity details (name, title, gendre, etc...)"
+        },
+        "loyaltyPrograms" : {
+          "type" : "array",
+          "description" : "Traveler's loyalty programs (frequent traveler number, etc...)",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:model:person:LoyaltyProgram"
+          }
+        },
+        "preferences" : {
+          "$ref" : "#/definitions/TravelClean:model:person:preference:Preference",
+          "description" : "Traveler's preferences"
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "Type of passenger such as ADT, INF, CHD... also known as PTC in airline context"
+        }
+      }
+    },
+    "TravelClean:travel:model:traveler:contact:Contacts":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:traveler:contact:Contacts",
+      "properties" : {
+        "cleanAddress" : {
+          "type" : "array",
+          "description" : "List of cleaned addresses, not present if the cleaning process failed",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:model:person:contact:Address"
+          }
+        },
+        "cleanEmails" : {
+          "type" : "array",
+          "description" : "List of cleaned emails, not present if the cleaning process failed",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:model:person:contact:Email"
+          }
+        },
+        "cleanOthers" : {
+          "type" : "array",
+          "description" : "List of cleaned other contacts, not present if the cleaning process failed",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:model:person:contact:OtherContact"
+          }
+        },
+        "cleanPhones" : {
+          "type" : "array",
+          "description" : "List of cleaned phones, not present if the cleaning process failed",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:model:person:contact:Phone"
+          }
+        }
+      }
+    },
+    "TravelClean:travel:model:trip:Boarding":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:trip:Boarding",
+      "properties" : {
+        "boarded" : {
+          "type" : "boolean",
+          "description" : "Indicates if the passenger should be considered as boarded"
+        },
+        "passStatus" : {
+          "type" : "string",
+          "description" : "Boarding pass status printed (PRINTED), not printed (NOT_PRINTED) or reprinted (REPRINT_NEEDED)"
+        },
+        "report" : {
+          "type" : "string",
+          "description" : "Boarding report, ie what is the reason for not boarding for instance"
+        },
+        "timestamp" : {
+          "type" : "array",
+          "description" : "Boarding timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        }
+      }
+    },
+    "TravelClean:travel:model:trip:Checkin":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:trip:Checkin",
+      "properties" : {
+        "channel" : {
+          "type" : "string",
+          "description" : "Channel used by a passenger to checkin for a specific transport (in Amadeus context:  A: Airline check-in agent, S: Self service machine, D: Direct consumer, E: Electronic selling system)"
+        },
+        "status" : {
+          "type" : "string",
+          "description" : "Status of a passenger checkin for a specific transport (accepted, rejected, or queued)"
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "Channel type used by a passenger to checkin for a specific transport (in Amadeus context CPC: Cryptic, EXD: External departure control system, JFE: Java Front-End, KSK: Kiosk, MBL: Mobile phone, SMS, TEL: Telephone, WEB: Internet)"
+        }
+      }
+    },
+    "TravelClean:travel:model:trip:DeliveryData":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:trip:DeliveryData",
+      "properties" : {
+        "baggageTags" : {
+          "type" : "array",
+          "description" : "Baggage tags for a passenger that has at least been boarded (might be deboarded afterward)",
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "baggageTotalWeight" : {
+          "type" : "integer",
+          "description" : "Baggage total weight for a passenger that has at least been boarded (might be deboarded afterward)"
+        },
+        "boarding" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:trip:Boarding",
+          "description" : "Delivery boarding data"
+        },
+        "booked" : {
+          "type" : "boolean",
+          "description" : "Indicates if the passenger was originally booked"
+        },
+        "checkin" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:trip:Checkin",
+          "description" : "Delivery check-in data"
+        },
+        "compensation" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Compensation",
+          "description" : "Potential compensation data for a passenger that was finally not boarded"
+        },
+        "regradeStatus" : {
+          "type" : "string",
+          "description" : "Describes if the customer's class has been upgraded or downgraded, with or against his/her will following possible values : REGRADE_REFUSED, REGRADE_INVOLUNTARY, UPGRADE_INVOLUNTARY, DOWNGRADE_INVOLUNTARY, REGRADE_VOLUNTARY, UPGRADE_VOLUNTARY, DOWNGRADE_VOLUNTARY"
+        },
+        "seat" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:trip:Seat",
+          "description" : "Last seat assigned to a passenger that has at least been boarded (might be deboarded afterward)"
+        }
+      }
+    },
+    "TravelClean:travel:model:trip:IExtraCouponDefault":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:trip:IExtraCouponDefault",
+      "properties" : {
+        "connectedReference" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:service:ReceiptReferenceConnection",
+          "description" : "Reference of the potential linked receipt (in airline context, for EMD it stands for Issuance in Connection With)"
+        },
+        "feeOwnerCode" : {
+          "type" : "string",
+          "description" : "Code of the company to which the revenue will be affected"
+        },
+        "number" : {
+          "type" : "integer",
+          "description" : "Number of the actual coupon"
+        },
+        "remark" : {
+          "type" : "string",
+          "description" : "Coupon potential associated remark"
+        },
+        "serviceType" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:service:ServiceDefinition",
+          "description" : "Type of the service, in airline context: Reason for Issuance SubCode (RFISC)"
+        },
+        "statusCode" : {
+          "type" : "string",
+          "description" : "Code of the coupon status"
+        },
+        "termOfUse" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:service:TermOfUse",
+          "description" : "Coupon global terms of use details"
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "Type of the actual coupon",
+          "enum" : [ "EXTRA", "MEAL", "SEAT", "SSR", "SVC", "TRIP", "XBAG" ]
+        },
+        "value" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Price",
+          "description" : "Coupon value"
+        }
+      }
+    },
+    "TravelClean:travel:model:trip:IExtraPurchaseDefault":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:trip:IExtraPurchaseDefault",
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "description" : "Conztanz internal ID"
+        },
+        "_uuid" : {
+          "type" : "string",
+          "description" : "Conztanz internal UUID"
+        },
+        "external" : {
+          "type" : "boolean",
+          "description" : "True if this purchase is not coming from the company main GDS. Typically identifying a document received through a SSR TKNx in airline context"
+        },
+        "id" : {
+          "type" : "integer",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        },
+        "items" : {
+          "type" : "array",
+          "description" : "Requests concerned by the purchase act. (All non-chargeable requests will be grouped in a purchase without any pricing/receipt associated to it)",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:trip:IExtraRequestDefault"
+          }
+        },
+        "payments" : {
+          "type" : "array",
+          "description" : "Details of payments information of the purchase",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:purchase:Payment"
+          }
+        },
+        "pricing" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:PricingBase",
+          "description" : "Materialization of all data related to the pricing of the purchase. In airline context, it is typically related to the tarification element of the PNR"
+        },
+        "receipt" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:ReceiptBase",
+          "description" : "Materialization of all data concerning purchase finalisation (i.e. ticket). In airline context, it is typically related to the document/ticket element of the PNR"
+        },
+        "restriction" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Restriction",
+          "description" : "Details of restrictions applying on the purchase"
+        },
+        "serviceFamily" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:service:ServiceDefinition",
+          "description" : "Family of the service, in airline context: Reason For Issuance Code (RFIC); possible values: A (Air Transportation), B (Surface Transportation/Non-air Services), C (Baggage), D (Financial Impact), E (Airport Services), F (Merchandise), G (In-flight Services)"
+        },
+        "synchronization" : {
+          "type" : "string",
+          "description" : "Type of synchronization of the purchase regarding its items. Values are FULL (all purchased items are present), PARTIAL (some items have been removed) & NONE (all items are removed - typically a FH PNR element for air segment).",
+          "enum" : [ "NONE", "PART", "FULL" ]
+        },
+        "uuid" : {
+          "type" : "string",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        }
+      }
+    },
+    "TravelClean:travel:model:trip:IExtraRequestDefault":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:trip:IExtraRequestDefault",
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "description" : "Conztanz internal ID"
+        },
+        "_uuid" : {
+          "type" : "string",
+          "description" : "Conztanz internal UUID"
+        },
+        "chargeable" : {
+          "type" : "boolean",
+          "description" : "True if the requested service is considered chargeable"
+        },
+        "code" : {
+          "type" : "string",
+          "description" : "Requested service item code. In airline context, values can be anything from IATA standard codes (RQST, VGML, XBAG, ...) to airline specific ones"
+        },
+        "companyCode" : {
+          "type" : "string",
+          "description" : "Code of the company (airline) to which the request has been sent"
+        },
+        "coupon" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:trip:IExtraCouponDefault",
+          "description" : "Coupon usage associated with the requested service"
+        },
+        "creator" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:identification:booking:Office",
+          "description" : "Request creator details"
+        },
+        "creatorStamp" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:identification:booking:Stamp",
+          "description" : "Request creator validation stamp"
+        },
+        "id" : {
+          "type" : "integer",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        },
+        "reference" : {
+          "type" : "integer",
+          "description" : "PSS internal ID, (tattoo in SBR for instance)"
+        },
+        "remark" : {
+          "type" : "string",
+          "description" : "Associated remark details"
+        },
+        "removed" : {
+          "type" : "boolean",
+          "description" : "True if should be considered as removed, ie not present anymore in PNR for instance"
+        },
+        "revisions" : {
+          "type" : "array",
+          "description" : "Revisions where item was present (only used for revalidation)",
+          "items" : {
+            "type" : "integer"
+          }
+        },
+        "statusCode" : {
+          "type" : "string",
+          "description" : "Requested service status code"
+        },
+        "transportId" : {
+          "type" : "integer",
+          "description" : "Identification of the transport to which the request is associated"
+        },
+        "transportReference" : {
+          "type" : "integer",
+          "description" : "Reference of the transport to which the request is associated"
+        },
+        "uuid" : {
+          "type" : "string",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        }
+      }
+    },
+    "TravelClean:travel:model:trip:IMealCouponDefault":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:trip:IMealCouponDefault",
+      "properties" : {
+        "connectedReference" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:service:ReceiptReferenceConnection",
+          "description" : "Reference of the potential linked receipt (in airline context, for EMD it stands for Issuance in Connection With)"
+        },
+        "feeOwnerCode" : {
+          "type" : "string",
+          "description" : "Code of the company to which the revenue will be affected"
+        },
+        "number" : {
+          "type" : "integer",
+          "description" : "Number of the actual coupon"
+        },
+        "remark" : {
+          "type" : "string",
+          "description" : "Coupon potential associated remark"
+        },
+        "serviceType" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:service:ServiceDefinition",
+          "description" : "Type of the service, in airline context: Reason for Issuance SubCode (RFISC)"
+        },
+        "statusCode" : {
+          "type" : "string",
+          "description" : "Code of the coupon status"
+        },
+        "termOfUse" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:service:TermOfUse",
+          "description" : "Coupon global terms of use details"
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "Type of the actual coupon",
+          "enum" : [ "EXTRA", "MEAL", "SEAT", "SSR", "SVC", "TRIP", "XBAG" ]
+        },
+        "value" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Price",
+          "description" : "Coupon value"
+        }
+      }
+    },
+    "TravelClean:travel:model:trip:IMealPurchaseDefault":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:trip:IMealPurchaseDefault",
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "description" : "Conztanz internal ID"
+        },
+        "_uuid" : {
+          "type" : "string",
+          "description" : "Conztanz internal UUID"
+        },
+        "external" : {
+          "type" : "boolean",
+          "description" : "True if this purchase is not coming from the company main GDS. Typically identifying a document received through a SSR TKNx in airline context"
+        },
+        "id" : {
+          "type" : "integer",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        },
+        "items" : {
+          "type" : "array",
+          "description" : "Requests concerned by the purchase act. (All non-chargeable requests will be grouped in a purchase without any pricing/receipt associated to it)",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:trip:IMealRequestDefault"
+          }
+        },
+        "payments" : {
+          "type" : "array",
+          "description" : "Details of payments information of the purchase",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:purchase:Payment"
+          }
+        },
+        "pricing" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:PricingBase",
+          "description" : "Materialization of all data related to the pricing of the purchase. In airline context, it is typically related to the tarification element of the PNR"
+        },
+        "receipt" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:ReceiptBase",
+          "description" : "Materialization of all data concerning purchase finalisation (i.e. ticket). In airline context, it is typically related to the document/ticket element of the PNR"
+        },
+        "restriction" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Restriction",
+          "description" : "Details of restrictions applying on the purchase"
+        },
+        "serviceFamily" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:service:ServiceDefinition",
+          "description" : "Family of the service, in airline context: Reason For Issuance Code (RFIC); possible values: A (Air Transportation), B (Surface Transportation/Non-air Services), C (Baggage), D (Financial Impact), E (Airport Services), F (Merchandise), G (In-flight Services)"
+        },
+        "synchronization" : {
+          "type" : "string",
+          "description" : "Type of synchronization of the purchase regarding its items. Values are FULL (all purchased items are present), PARTIAL (some items have been removed) & NONE (all items are removed - typically a FH PNR element for air segment).",
+          "enum" : [ "NONE", "PART", "FULL" ]
+        },
+        "uuid" : {
+          "type" : "string",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        }
+      }
+    },
+    "TravelClean:travel:model:trip:IMealRequestDefault":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:trip:IMealRequestDefault",
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "description" : "Conztanz internal ID"
+        },
+        "_uuid" : {
+          "type" : "string",
+          "description" : "Conztanz internal UUID"
+        },
+        "chargeable" : {
+          "type" : "boolean",
+          "description" : "True if the requested service is considered chargeable"
+        },
+        "code" : {
+          "type" : "string",
+          "description" : "Requested service item code. In airline context, values can be anything from IATA standard codes (RQST, VGML, XBAG, ...) to airline specific ones"
+        },
+        "companyCode" : {
+          "type" : "string",
+          "description" : "Code of the company (airline) to which the request has been sent"
+        },
+        "coupon" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:trip:IMealCouponDefault",
+          "description" : "Coupon usage associated with the requested service"
+        },
+        "creator" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:identification:booking:Office",
+          "description" : "Request creator details"
+        },
+        "creatorStamp" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:identification:booking:Stamp",
+          "description" : "Request creator validation stamp"
+        },
+        "id" : {
+          "type" : "integer",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        },
+        "reference" : {
+          "type" : "integer",
+          "description" : "PSS internal ID, (tattoo in SBR for instance)"
+        },
+        "remark" : {
+          "type" : "string",
+          "description" : "Associated remark details"
+        },
+        "removed" : {
+          "type" : "boolean",
+          "description" : "True if should be considered as removed, ie not present anymore in PNR for instance"
+        },
+        "revisions" : {
+          "type" : "array",
+          "description" : "Revisions where item was present (only used for revalidation)",
+          "items" : {
+            "type" : "integer"
+          }
+        },
+        "statusCode" : {
+          "type" : "string",
+          "description" : "Requested service status code"
+        },
+        "transportId" : {
+          "type" : "integer",
+          "description" : "Identification of the transport to which the request is associated"
+        },
+        "transportReference" : {
+          "type" : "integer",
+          "description" : "Reference of the transport to which the request is associated"
+        },
+        "uuid" : {
+          "type" : "string",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        }
+      }
+    },
+    "TravelClean:travel:model:trip:ISeatCouponDefault":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:trip:ISeatCouponDefault",
+      "properties" : {
+        "connectedReference" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:service:ReceiptReferenceConnection",
+          "description" : "Reference of the potential linked receipt (in airline context, for EMD it stands for Issuance in Connection With)"
+        },
+        "feeOwnerCode" : {
+          "type" : "string",
+          "description" : "Code of the company to which the revenue will be affected"
+        },
+        "number" : {
+          "type" : "integer",
+          "description" : "Number of the actual coupon"
+        },
+        "remark" : {
+          "type" : "string",
+          "description" : "Coupon potential associated remark"
+        },
+        "serviceType" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:service:ServiceDefinition",
+          "description" : "Type of the service, in airline context: Reason for Issuance SubCode (RFISC)"
+        },
+        "statusCode" : {
+          "type" : "string",
+          "description" : "Code of the coupon status"
+        },
+        "termOfUse" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:service:TermOfUse",
+          "description" : "Coupon global terms of use details"
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "Type of the actual coupon",
+          "enum" : [ "EXTRA", "MEAL", "SEAT", "SSR", "SVC", "TRIP", "XBAG" ]
+        },
+        "value" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Price",
+          "description" : "Coupon value"
+        }
+      }
+    },
+    "TravelClean:travel:model:trip:ISeatPurchaseDefault":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:trip:ISeatPurchaseDefault",
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "description" : "Conztanz internal ID"
+        },
+        "_uuid" : {
+          "type" : "string",
+          "description" : "Conztanz internal UUID"
+        },
+        "external" : {
+          "type" : "boolean",
+          "description" : "True if this purchase is not coming from the company main GDS. Typically identifying a document received through a SSR TKNx in airline context"
+        },
+        "id" : {
+          "type" : "integer",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        },
+        "items" : {
+          "type" : "array",
+          "description" : "Requests concerned by the purchase act. (All non-chargeable requests will be grouped in a purchase without any pricing/receipt associated to it)",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:trip:ISeatRequestDefault"
+          }
+        },
+        "payments" : {
+          "type" : "array",
+          "description" : "Details of payments information of the purchase",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:purchase:Payment"
+          }
+        },
+        "pricing" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:PricingBase",
+          "description" : "Materialization of all data related to the pricing of the purchase. In airline context, it is typically related to the tarification element of the PNR"
+        },
+        "receipt" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:ReceiptBase",
+          "description" : "Materialization of all data concerning purchase finalisation (i.e. ticket). In airline context, it is typically related to the document/ticket element of the PNR"
+        },
+        "restriction" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Restriction",
+          "description" : "Details of restrictions applying on the purchase"
+        },
+        "serviceFamily" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:service:ServiceDefinition",
+          "description" : "Family of the service, in airline context: Reason For Issuance Code (RFIC); possible values: A (Air Transportation), B (Surface Transportation/Non-air Services), C (Baggage), D (Financial Impact), E (Airport Services), F (Merchandise), G (In-flight Services)"
+        },
+        "synchronization" : {
+          "type" : "string",
+          "description" : "Type of synchronization of the purchase regarding its items. Values are FULL (all purchased items are present), PARTIAL (some items have been removed) & NONE (all items are removed - typically a FH PNR element for air segment).",
+          "enum" : [ "NONE", "PART", "FULL" ]
+        },
+        "uuid" : {
+          "type" : "string",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        }
+      }
+    },
+    "TravelClean:travel:model:trip:ISeatRequestDefault":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:trip:ISeatRequestDefault",
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "description" : "Conztanz internal ID"
+        },
+        "_uuid" : {
+          "type" : "string",
+          "description" : "Conztanz internal UUID"
+        },
+        "chargeable" : {
+          "type" : "boolean",
+          "description" : "True if the requested service is considered chargeable"
+        },
+        "code" : {
+          "type" : "string",
+          "description" : "Requested service item code. In airline context, values can be anything from IATA standard codes (RQST, VGML, XBAG, ...) to airline specific ones"
+        },
+        "companyCode" : {
+          "type" : "string",
+          "description" : "Code of the company (airline) to which the request has been sent"
+        },
+        "coupon" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:trip:ISeatCouponDefault",
+          "description" : "Coupon usage associated with the requested service"
+        },
+        "creator" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:identification:booking:Office",
+          "description" : "Request creator details"
+        },
+        "creatorStamp" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:identification:booking:Stamp",
+          "description" : "Request creator validation stamp"
+        },
+        "id" : {
+          "type" : "integer",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        },
+        "reference" : {
+          "type" : "integer",
+          "description" : "PSS internal ID, (tattoo in SBR for instance)"
+        },
+        "remark" : {
+          "type" : "string",
+          "description" : "Associated remark details"
+        },
+        "removed" : {
+          "type" : "boolean",
+          "description" : "True if should be considered as removed, ie not present anymore in PNR for instance"
+        },
+        "revisions" : {
+          "type" : "array",
+          "description" : "Revisions where item was present (only used for revalidation)",
+          "items" : {
+            "type" : "integer"
+          }
+        },
+        "seat" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:trip:Seat",
+          "description" : "Details on specific seat requested"
+        },
+        "statusCode" : {
+          "type" : "string",
+          "description" : "Requested service status code"
+        },
+        "transportId" : {
+          "type" : "integer",
+          "description" : "Identification of the transport to which the request is associated"
+        },
+        "transportReference" : {
+          "type" : "integer",
+          "description" : "Reference of the transport to which the request is associated"
+        },
+        "uuid" : {
+          "type" : "string",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        }
+      }
+    },
+    "TravelClean:travel:model:trip:ITripBookingDefault":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:trip:ITripBookingDefault",
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "description" : "Conztanz internal ID"
+        },
+        "_uuid" : {
+          "type" : "string",
+          "description" : "Conztanz internal UUID"
+        },
+        "baggageAllowance" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:standard:Quantity",
+          "description" : "Details on booking associated baggage allowance"
+        },
+        "coupon" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:trip:ITripCouponDefault",
+          "description" : "Coupon usage associated with the requested service"
+        },
+        "id" : {
+          "type" : "integer",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        },
+        "reference" : {
+          "type" : "integer",
+          "description" : "PSS internal ID, (tattoo in SBR for instance)"
+        },
+        "removed" : {
+          "type" : "boolean",
+          "description" : "True if should be considered as removed, ie not present anymore in PNR for instance"
+        },
+        "revisions" : {
+          "type" : "array",
+          "description" : "Revisions where item was present (only used for revalidation)",
+          "items" : {
+            "type" : "integer"
+          }
+        },
+        "transportId" : {
+          "type" : "integer",
+          "description" : "Identification of the transport to which the trip booking is associated"
+        },
+        "transportReference" : {
+          "type" : "integer",
+          "description" : "Reference of the transport to which the trip booking is associated"
+        },
+        "uuid" : {
+          "type" : "string",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        }
+      }
+    },
+    "TravelClean:travel:model:trip:ITripCouponDefault":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:trip:ITripCouponDefault",
+      "properties" : {
+        "fareBasis" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:trip:TripCouponFareBasis",
+          "description" : "Fare basis of the coupon"
+        },
+        "number" : {
+          "type" : "integer",
+          "description" : "Number of the actual coupon"
+        },
+        "statusCode" : {
+          "type" : "string",
+          "description" : "Code of the coupon status"
+        },
+        "termOfUse" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:service:TermOfUse",
+          "description" : "Coupon global terms of use details"
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "Type of the actual coupon",
+          "enum" : [ "EXTRA", "MEAL", "SEAT", "SSR", "SVC", "TRIP", "XBAG" ]
+        }
+      }
+    },
+    "TravelClean:travel:model:trip:ITripPurchaseDefault":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:trip:ITripPurchaseDefault",
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "description" : "Conztanz internal ID"
+        },
+        "_uuid" : {
+          "type" : "string",
+          "description" : "Conztanz internal UUID"
+        },
+        "external" : {
+          "type" : "boolean",
+          "description" : "True if this purchase is not coming from the company main GDS. Typically identifying a document received through a SSR TKNx in airline context"
+        },
+        "id" : {
+          "type" : "integer",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        },
+        "items" : {
+          "type" : "array",
+          "description" : "Services concerned by the purchase act",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:trip:ITripBookingDefault"
+          }
+        },
+        "payments" : {
+          "type" : "array",
+          "description" : "Details of payments information of the purchase",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:purchase:Payment"
+          }
+        },
+        "pricing" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:PricingBase",
+          "description" : "Materialization of all data related to the pricing of the purchase. In airline context, it is typically related to the tarification element of the PNR"
+        },
+        "receipt" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:ReceiptBase",
+          "description" : "Materialization of all data concerning purchase finalisation (i.e. ticket). In airline context, it is typically related to the document/ticket element of the PNR"
+        },
+        "restriction" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Restriction",
+          "description" : "Details of restrictions applying on the purchase"
+        },
+        "synchronization" : {
+          "type" : "string",
+          "description" : "Type of synchronization of the purchase regarding its items. Values are FULL (all purchased items are present), PARTIAL (some items have been removed) & NONE (all items are removed - typically a FH PNR element for air segment).",
+          "enum" : [ "NONE", "PART", "FULL" ]
+        },
+        "uuid" : {
+          "type" : "string",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        }
+      }
+    },
+    "TravelClean:travel:model:trip:IXBagCouponDefault":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:trip:IXBagCouponDefault",
+      "properties" : {
+        "connectedReference" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:service:ReceiptReferenceConnection",
+          "description" : "Reference of the potential linked receipt (in airline context, for EMD it stands for Issuance in Connection With)"
+        },
+        "feeOwnerCode" : {
+          "type" : "string",
+          "description" : "Code of the company to which the revenue will be affected"
+        },
+        "number" : {
+          "type" : "integer",
+          "description" : "Number of the actual coupon"
+        },
+        "ratePerUnit" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Price",
+          "description" : "Rate per unit (in airline context used for specific EMD - currently bag EMD only)"
+        },
+        "remark" : {
+          "type" : "string",
+          "description" : "Coupon potential associated remark"
+        },
+        "serviceType" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:service:ServiceDefinition",
+          "description" : "Type of the service, in airline context: Reason for Issuance SubCode (RFISC)"
+        },
+        "statusCode" : {
+          "type" : "string",
+          "description" : "Code of the coupon status"
+        },
+        "termOfUse" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:service:TermOfUse",
+          "description" : "Coupon global terms of use details"
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "Type of the actual coupon",
+          "enum" : [ "EXTRA", "MEAL", "SEAT", "SSR", "SVC", "TRIP", "XBAG" ]
+        },
+        "value" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Price",
+          "description" : "Coupon value"
+        }
+      }
+    },
+    "TravelClean:travel:model:trip:IXBagPurchaseDefault":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:trip:IXBagPurchaseDefault",
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "description" : "Conztanz internal ID"
+        },
+        "_uuid" : {
+          "type" : "string",
+          "description" : "Conztanz internal UUID"
+        },
+        "external" : {
+          "type" : "boolean",
+          "description" : "True if this purchase is not coming from the company main GDS. Typically identifying a document received through a SSR TKNx in airline context"
+        },
+        "id" : {
+          "type" : "integer",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        },
+        "items" : {
+          "type" : "array",
+          "description" : "Requests concerned by the purchase act. (All non-chargeable requests will be grouped in a purchase without any pricing/receipt associated to it)",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:trip:IXBagRequestDefault"
+          }
+        },
+        "payments" : {
+          "type" : "array",
+          "description" : "Details of payments information of the purchase",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:purchase:Payment"
+          }
+        },
+        "pricing" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:PricingBase",
+          "description" : "Materialization of all data related to the pricing of the purchase. In airline context, it is typically related to the tarification element of the PNR"
+        },
+        "receipt" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:ReceiptBase",
+          "description" : "Materialization of all data concerning purchase finalisation (i.e. ticket). In airline context, it is typically related to the document/ticket element of the PNR"
+        },
+        "restriction" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:purchase:Restriction",
+          "description" : "Details of restrictions applying on the purchase"
+        },
+        "serviceFamily" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:service:ServiceDefinition",
+          "description" : "Family of the service, in airline context: Reason For Issuance Code (RFIC); possible values: A (Air Transportation), B (Surface Transportation/Non-air Services), C (Baggage), D (Financial Impact), E (Airport Services), F (Merchandise), G (In-flight Services)"
+        },
+        "synchronization" : {
+          "type" : "string",
+          "description" : "Type of synchronization of the purchase regarding its items. Values are FULL (all purchased items are present), PARTIAL (some items have been removed) & NONE (all items are removed - typically a FH PNR element for air segment).",
+          "enum" : [ "NONE", "PART", "FULL" ]
+        },
+        "uuid" : {
+          "type" : "string",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        }
+      }
+    },
+    "TravelClean:travel:model:trip:IXBagRequestDefault":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:trip:IXBagRequestDefault",
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "description" : "Conztanz internal ID"
+        },
+        "_uuid" : {
+          "type" : "string",
+          "description" : "Conztanz internal UUID"
+        },
+        "baggageAllowance" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:standard:Quantity",
+          "description" : "Details on baggage allowance requested"
+        },
+        "chargeable" : {
+          "type" : "boolean",
+          "description" : "True if the requested service is considered chargeable"
+        },
+        "code" : {
+          "type" : "string",
+          "description" : "Requested service item code. In airline context, values can be anything from IATA standard codes (RQST, VGML, XBAG, ...) to airline specific ones"
+        },
+        "companyCode" : {
+          "type" : "string",
+          "description" : "Code of the company (airline) to which the request has been sent"
+        },
+        "coupon" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:trip:IXBagCouponDefault",
+          "description" : "Coupon usage associated with the requested service"
+        },
+        "creator" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:identification:booking:Office",
+          "description" : "Request creator details"
+        },
+        "creatorStamp" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:identification:booking:Stamp",
+          "description" : "Request creator validation stamp"
+        },
+        "id" : {
+          "type" : "integer",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        },
+        "reference" : {
+          "type" : "integer",
+          "description" : "PSS internal ID, (tattoo in SBR for instance)"
+        },
+        "remark" : {
+          "type" : "string",
+          "description" : "Associated remark details"
+        },
+        "removed" : {
+          "type" : "boolean",
+          "description" : "True if should be considered as removed, ie not present anymore in PNR for instance"
+        },
+        "revisions" : {
+          "type" : "array",
+          "description" : "Revisions where item was present (only used for revalidation)",
+          "items" : {
+            "type" : "integer"
+          }
+        },
+        "statusCode" : {
+          "type" : "string",
+          "description" : "Requested service status code"
+        },
+        "transportId" : {
+          "type" : "integer",
+          "description" : "Identification of the transport to which the request is associated"
+        },
+        "transportReference" : {
+          "type" : "integer",
+          "description" : "Reference of the transport to which the request is associated"
+        },
+        "uuid" : {
+          "type" : "string",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        }
+      }
+    },
+    "TravelClean:travel:model:trip:Seat":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:trip:Seat",
+      "properties" : {
+        "areas" : {
+          "type" : "array",
+          "description" : "Definition of different seat areas. In airline context, values are: A for Aisle seat, B for Bassinet, FC for Front of aircraft, E for Exit row, J for Rear Facing, K for Bulkhead seat, L for Leg Space, T for Tail of aircraft, UP for Upper deck, W for Window seat",
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "column" : {
+          "type" : "string",
+          "description" : "Seat column definition"
+        },
+        "row" : {
+          "type" : "integer",
+          "description" : "Seat row definition"
+        }
+      }
+    },
+    "TravelClean:travel:model:trip:Transport":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:trip:Transport",
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "description" : "Conztanz internal ID"
+        },
+        "_uuid" : {
+          "type" : "string",
+          "description" : "Conztanz internal UUID"
+        },
+        "arrival" : {
+          "$ref" : "#/definitions/TravelClean:model:standard:geography:Stopover",
+          "description" : "Details about the transport destination"
+        },
+        "checkInTime" : {
+          "type" : "array",
+          "description" : "Check-in time limit (format=[hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 4,
+          "minItems" : 4
+        },
+        "commercialDesignator" : {
+          "$ref" : "#/definitions/TravelClean:model:standard:Designator",
+          "description" : "Commercial designation of the transport. In airline context, different from operational one in case of code share transport"
+        },
+        "createTimestamp" : {
+          "type" : "array",
+          "description" : "Creation timestamp (format=[yyyy][MM][dd][hh][mm][ss][sss])",
+          "items" : {
+            "type" : "integer"
+          },
+          "maxItems" : 7,
+          "minItems" : 7
+        },
+        "creator" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:identification:booking:PointOfSale",
+          "description" : "Creator details"
+        },
+        "deliveryData" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:trip:DeliveryData",
+          "description" : "Delivery data concerning this transport"
+        },
+        "departure" : {
+          "$ref" : "#/definitions/TravelClean:model:standard:geography:Stopover",
+          "description" : "Details about the transport origin"
+        },
+        "id" : {
+          "type" : "integer",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        },
+        "informative" : {
+          "type" : "boolean",
+          "description" : "True if the transport is said informative. In airline context, transport from another company handled on another PSS and present in the SBR for information only. No update/pricing/ticket issuance/cancelling etc... possible"
+        },
+        "loyaltyUsages" : {
+          "type" : "array",
+          "description" : "Loyalty programs used on this transport booking",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:traveler:LoyaltyProgramUsage"
+          }
+        },
+        "mode" : {
+          "$ref" : "#/definitions/TravelClean:travel:model:standard:TransportMode",
+          "description" : "Transport mode details"
+        },
+        "open" : {
+          "type" : "boolean",
+          "description" : "True if the transport is said OPEN, ie without any scheduling yet"
+        },
+        "operationalDesignator" : {
+          "$ref" : "#/definitions/TravelClean:model:standard:Designator",
+          "description" : "Operational designation of the transport. In airline context, different from commercial one in case of code share transport"
+        },
+        "reference" : {
+          "type" : "integer",
+          "description" : "PSS internal ID, (tattoo in SBR for instance)"
+        },
+        "remarks" : {
+          "type" : "array",
+          "description" : "Remarks associated with transport booking",
+          "items" : {
+            "$ref" : "#/definitions/TravelClean:travel:model:miscellaneous:Remark"
+          }
+        },
+        "removed" : {
+          "type" : "boolean",
+          "description" : "True if should be considered as removed, ie not present anymore in PNR for instance"
+        },
+        "statusCode" : {
+          "type" : "string",
+          "description" : "Status code associated to the transport booking. In airline context, values are HK, KK, UN, KL..."
+        },
+        "uuid" : {
+          "type" : "string",
+          "description" : "Here for backward compatibility during technical_field -> _technical_field migration"
+        }
+      }
+    },
+    "TravelClean:travel:model:trip:TripCouponFareBasis":{
+      "type" : "object",
+      "id" : "TravelClean:travel:model:trip:TripCouponFareBasis",
+      "properties" : {
+        "code" : {
+          "type" : "string",
+          "description" : "Code of the fare basis"
+        },
+        "primaryCode" : {
+          "type" : "string",
+          "description" : "Primary code of the fare basis"
+        },
+        "ticketDesignator" : {
+          "type" : "string",
+          "description" : "Ticket designator of the fare basis"
+        }
+      }
+    }
+  }
+}

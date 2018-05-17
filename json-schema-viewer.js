@@ -102,6 +102,11 @@ if (typeof JSV === 'undefined') {
 
         init: function(config, callback) {
             var i;
+
+            // remove everything
+            d3.selectAll('#jsv-tree').remove();
+            d3.selectAll('#jsv-legend').remove();
+
             //apply config
             for (i in config) {
                 if (JSV.hasOwnProperty(i)) {
@@ -1325,6 +1330,7 @@ if (typeof JSV === 'undefined') {
 
 
                 var legendSvg = d3.select('#legend-items').append('svg')
+                    .attr( 'id', 'jsv-legend')
                     .attr('width', 170)
                     .attr('height', 180);
 

@@ -15,18 +15,23 @@
                 Loading...
             </div>
         </div>
-        <div class="ui-responsive-panel" data-role="page" id="viewer-page"  data-title="JSON Schema Viewer">
+        <div class="ui-responsive-panel" data-role="page" id="viewer-page"  data-title="Conztanz Data Model Viewer">
             <div data-role="header" class="md-navbar">
                 <div data-role="controlgroup" data-type="horizontal" class="ui-btn-left">
-                    <a class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext" href="#info-panel" title="Toggle Info">Menu</a>
+                    <a id="info-panel-selector" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext" href="#info-panel" title="Toggle Info">Menu</a>
                     <a class="ui-btn md-flex-btn ui-corner-all ui-icon-check ui-btn-icon-left" href="#validator-page" title="Go to Validator">Validator</a>
                     <!--<a href="#" class="ui-btn ui-btn-icon-right ui-icon-plus ui-btn-icon-notext ui-corner-all">Zoom-in</a>
                     <a href="#" class="ui-btn ui-btn-icon-right ui-icon-minus ui-btn-icon-notext ui-corner-all">Zoom-out</a>-->
 
                 </div>
-                <h1 id="viewer-title">JSON Schema Viewer<span class="schema-version"></span></h1>
-                <!-- <a class="ui-btn-right ui-btn ui-icon-info ui-btn-icon-notext ui-corner-all" href="#help-panel"  title="Toggle Help">Help</a> -->
-                <a data-rel="popup" data-role="none" data-position-to="window" class="ui-btn-right main-logo" href="#popup-welcome"  title="Show Info"></a>
+                <h1 id="viewer-title">Conztanz Data Model Viewer<span class="schema-version"></span></h1>
+                <div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
+                    <select id="schemaSelector">
+                        <!-- OPTIONS WILL BE ADDED DURING BUILD BELOW -->
+                    </select>
+                    <a class="ui-btn ui-icon-info ui-btn-icon-notext ui-corner-all" href="#help-panel"  title="Toggle Help">Help</a>
+                </div>
+                <!-- <a data-rel="popup" data-role="none" data-position-to="window" class="ui-btn-right main-logo" href="#popup-welcome"  title="Show Info"></a> -->
             </div><!-- /header -->
             <div  role="main" class="ui-content" id="main-body">
                 <div id="zoom-controls">
@@ -85,11 +90,6 @@
                         <p id="info-definition">
                             Select a node to view the definition.
                         </p>
-                        <hr />
-                        <h4>Translation:</h4>
-                        <p id="info-translation">
-                            Select a node to view the translation.
-                        </p>
                     </div>
                     <div class="ui-body-d ui-content info-tab"  id="info-tab-example">
                         <p>
@@ -103,12 +103,11 @@
                     </div>
                 </div>
             </div>
-            <!-- <div data-role="panel" data-position="right" data-display="overlay" data-theme="a" id="help-panel">
-            <div data-role="header" data-theme="b">
-            <h1 data-role="header">Help</h1>
-
+            <div data-role="panel" data-position="right" data-display="overlay" data-theme="a" id="help-panel">
+                <div data-role="header" data-theme="b">
+                    <h1 data-role="header">Help</h1>
+                </div>
             </div>
-            </div> -->
         </div>
 
         <div data-role="page" id="validator-page"  data-title="JSON Validator">
@@ -117,7 +116,6 @@
                 <div data-role="controlgroup" data-type="horizontal" class="ui-btn-left">
                     <a class="ui-btn md-flex-btn ui-icon-eye ui-btn-icon-left ui-corner-all" href="#viewer-page"  title="Go to Viewer">Viewer</a>
                 </div>
-                <a data-rel="popup" data-role="none" data-position-to="window" class="ui-btn-right main-logo" href="#popup-welcome"  title="Show Info"></a>
             </div>
             <div role="main" class="ui-content">
                 <div class="ui-grid-a ui-responsive">
@@ -156,70 +154,17 @@
             </p>
         </div>
 
-        <div id="popup-welcome" data-role="popup" data-history="false" data-theme="a" data-overlay-theme="b">
+        <div id="popup-datamodel" data-role="popup" data-history="false" data-theme="a" data-overlay-theme="b">
             <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
             <div data-role="header" data-theme="b">
-                <h1>JSON Schema Viewer</h1>
+                <h1 id="popup-datamodel-title"></h1>
             </div>
             <div class="ui-content">
-                <p>
-                    JavaScript tool for visualizing json-schemas.
-                </p>
-                <h3> Built using: </h3>
-                <ul>
-                    <li>
-                        <a href="http://d3js.org/">D3.js</a>
-                    </li>
-                    <li>
-                        <a href="http://jquery.com/">jQuery</a>
-                    </li>
-                    <li>
-                        <a href="http://jquerymobile.com/">jQuery Mobile</a>
-                    </li>
-                    <li>
-                        <a href="http://geraintluff.github.io/tv4/">tv4</a>
-                    </li>
-                    <li>
-                        <a href="http://bgrins.github.io/filereader.js/">FileReader.js</a>
-                    </li>
-                    <li>
-                        <a href="https://highlightjs.org/">highlight.js</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/alexeykuzmin/jsonpointer.js">jsonpointer.js</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/mhulse/grunt-html-boiler">Grunt HTML Boiler</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/medialize/URI.js">URI.js</a>
-                    </li>
-                </ul>
-                <hr />
-                <h3> Features: </h3>
-                <ul>
-                    <li>
-                        <h4>Viewer</h4>
-                        <p>
-                            Interactive documentation tool for <a href="http://json-schema.org/">JSON schemas</a>.
-                            Utilizes the D3.js library to build a collapsible tree from the supplied schema(s).
-                        </p>
-                    </li>
-                    <li>
-                        <h4>JSON Validator</h4>
-                        <p>
-                            A tool to validate a json object using the supplied schema.
-                            Utilizes the tv4 library.
-                        </p>
-                    </li>
-                </ul>
-                <p>There's also a <a rel="external" href="./basic.html">basic example</a> without the jQuery Mobile interface elements.</p>
-                <hr />
-                <div id="welcome-footer">
-                    <a href="<!-- @echo homepage -->" class="ui-btn ui-btn-inline ui-icon-github ui-btn-icon-left">This project's on GitHub!</a>
+                <div layout="row" layout-align="center" >
+                    <object style="width:1000px;" id="popup-datamodel-image" type="image/svg+xml"/>
                 </div>
             </div>
-        </div>
+        </div>    
 
         <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script type="text/javascript" src="lib/preinit.js"></script>
@@ -240,10 +185,6 @@
         <script type='text/javascript' src="bower_components/highlightjs/highlight.pack.js"></script>
         <script type='text/javascript' src="bower_components/jquery.scrollTo/jquery.scrollTo.js"></script>
         <script type='text/javascript' src="json-schema-viewer.js"></script>
-        <script type='text/javascript'>
-          //set schema location
-          JSV.schema = '/bower_components/mdjson-schemas/schema/schema.json';
-        </script>
         <script type='text/javascript' src="lib/example.js"></script>
 
         <!-- @endif -->

@@ -426,6 +426,15 @@ module.exports = function(grunt) {
 
         },
 
+        /*----------------------------------( SHELL )----------------------------------*/
+        shell : {
+            prepareSchema : {
+                    command : [
+                        './prepareSchema.sh'
+                    ].join('&&')
+            }
+        },
+
         /*----------------------------------( COPY )----------------------------------*/
 
         /**
@@ -479,6 +488,22 @@ module.exports = function(grunt) {
                 ],
 
             },
+
+            schemas: {
+                files : [
+
+                    {
+
+                        expand : true,
+                        cwd : './tmp',
+                        src : [
+                            '*.json',
+                        ],
+                        dest : './prod/<%= pkg.version %>/<%= now %>/<%= ver %>/schemas/schema',
+
+                    }
+                ]
+            }
 
         },
 
@@ -552,6 +577,8 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-copy');
 
+    grunt.loadNpmTasks('grunt-shell');
+
     grunt.loadNpmTasks('grunt-gh-pages');
 
     grunt.loadNpmTasks('grunt-jsdoc');
@@ -577,12 +604,12 @@ module.exports = function(grunt) {
      * @member {task} dev
      * Build development.
      */
-    grunt.registerTask('dev', ['init', 'env:dev', 'sass:dev', 'preprocess:dev',]);
+    grunt.registerTask('dev', ['init', 'env:dev', 'sass:dev', 'preprocess:dev', 'shell:prepareSchema']);
     /**
      * @member {task} prod
      * Build production.
      */
-    grunt.registerTask('prod', ['init', 'dev', 'env:prod', 'doc', 'clean:prod', 'sass:prod', 'uglify:prod', 'preprocess:prod', 'copy:prod',]);
+    grunt.registerTask('prod', ['init', 'dev', 'env:prod', 'doc', 'clean:prod', 'sass:prod', 'uglify:prod', 'preprocess:prod', 'copy:prod', 'shell:prepareSchema', 'copy:schemas']);
     /**
      * @member {task} doc
      * Build jsdocs.
